@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-25 Thu 13:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Ashish" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga6315b4">Things to remember</a>
+<ul>
+<li><a href="#org626323d">Normal Distribution</a></li>
+<li><a href="#orgbf27d7d">Gamma Distribution</a></li>
+<li><a href="#org3900299">\(\chi^2_n\) distribution</a></li>
+<li><a href="#org256eceb">Poisson Distribution</a></li>
+<li><a href="#orgd9f577f">Exponential distribution</a></li>
+<li><a href="#org1e47c27">Uniform distribution</a></li>
+<li><a href="#org64cefeb">Types of convergence</a></li>
+<li><a href="#org24cd5f3">Strong Law of Large Numbers</a></li>
+<li><a href="#org1afd12d">Central Limit Theorem</a></li>
+</ul>
+</li>
+<li><a href="#orgee3f834">Chapter 1</a></li>
+<li><a href="#orgdcd1f80">Chapter 2</a>
+<ul>
+<li><a href="#org714f20b">Statistic</a></li>
+<li><a href="#orgbb2b0b5">Sufficient Statistic</a></li>
+<li><a href="#orgede8460">Neyman-Fischer Factorization Theorem</a>
+<ul>
+<li><a href="#orgdff1209">Corollary</a></li>
+</ul>
+</li>
+<li><a href="#orgbc9e877">Minimal Sufficient Statistic</a></li>
+<li><a href="#org0eaacc0">Theorem for finding minimal sufficient statistic</a></li>
+<li><a href="#org4d47a47">Fischer Information</a></li>
+<li><a href="#org16c1037">RS Information</a></li>
+<li><a href="#org6652cb6">Information and Statistics</a></li>
+<li><a href="#orgbd17a60">Family of Distributions induced by a statistic</a></li>
+<li><a href="#org1dd756c">Complete Family</a></li>
+<li><a href="#orgff62762">Complete Statistic</a></li>
+<li><a href="#org0410095">Complete Sufficient Statistic</a></li>
+<li><a href="#org3e3210c">Fact</a></li>
+<li><a href="#org85b49e6">Complete sufficient statistic is minimal sufficient</a></li>
+<li><a href="#org250b289">Exponential Family Definition</a></li>
+<li><a href="#orgd7dea71">Exponential Family Sufficient Statistic</a></li>
+<li><a href="#org557fd25">Exponential Family's minimal sufficient statistic is also complete</a></li>
+<li><a href="#orgfc4ee6c">Basu's Theorem</a></li>
+<li><a href="#org862bdb9">Maximum Likelihood Estimator (MLE)</a></li>
+<li><a href="#org30ce922">Invariance Property of MLE</a></li>
+<li><a href="#org3e31426">Unbiased Estimator</a></li>
+<li><a href="#orge51997b">Bias</a></li>
+<li><a href="#org628cc31">Mean-Square Error (MSE)</a></li>
+<li><a href="#org2de632c">Uniform Minimum Variance Unbiased Estimator (UMVUE)</a></li>
+<li><a href="#org98783b9">Theorem (UMVUE)</a></li>
+<li><a href="#orgb349a3c">Uniqueness of UMVUE</a></li>
+<li><a href="#orge7d2392">Rao-Blackwell Theorem</a></li>
+<li><a href="#org72d0d7d">Cramer-Rao Inequality</a></li>
+<li><a href="#org65243ae">Lehmann-Scheffe Theorem - I</a></li>
+<li><a href="#orgef97182">Lehmann-Scheffe Theorem - II</a></li>
+<li><a href="#orga370655">Consistent Estimator</a></li>
+<li><a href="#org08359c4">Consistency of MLE</a></li>
+<li><a href="#org9f2b268">Asymptotic Normality of MLE</a></li>
+</ul>
+</li>
+<li><a href="#org1244896">Chapter 3</a>
+<ul>
+<li><a href="#orgf77c9eb">Critical/Rejection Region</a></li>
+<li><a href="#org7e32f69">Power function</a></li>
+<li><a href="#org8e82908">Size of test</a></li>
+<li><a href="#orgea0600d">Level of test</a></li>
+<li><a href="#orga23a8b6">Critical/Test function</a></li>
+<li><a href="#org4d866ba">Power function</a></li>
+<li><a href="#org491d18a">Uniformly Most Powerful Test (UMP)</a></li>
+<li><a href="#orge8dbbd9">Simple Null vs Simple Alternative</a></li>
+<li><a href="#org7c3f1a1">Monotone Likelihood Ratio (MLR) Property</a></li>
+<li><a href="#org1ca52ed">Simple Null vs One sided alternative</a></li>
+</ul>
+</li>
+<li><a href="#org0f07213">Doubts</a>
+<ul>
+<li><a href="#org96cbbf6">Example 3.17</a>
+<ul>
+<li><a href="#org812ab76">How do we arrive at \(\psi_0\) (MLR property is undefined)?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga6315b4" class="outline-2">
+<h2 id="orga6315b4">Things to remember</h2>
+<div class="outline-text-2" id="text-orga6315b4">
+</div>
+<div id="outline-container-org626323d" class="outline-3">
+<h3 id="org626323d">Normal Distribution</h3>
+<div class="outline-text-3" id="text-org626323d">
+<ul class="org-ul">
+<li>MGF of \(\mathcal{N}(\mu, \sigma^2)\) is \(e^{\mu t + \frac{\sigma^2 t^2}{2}}\)</li>
+<li>\(\mathcal{N}(\mu, \sigma^2)\) if \(\sigma^2\) is known then \(\bar{X}\) is a complete sufficient statistic</li>
+<li>\(\mathcal{N}(\mu, \sigma^2)\) if both \(\mu\) and \(\sigma^2\) are unknown then \((\sum_{i=0}^{n} X_i, \sum_{i=0}^{n} X_i^2)\) is a complete sufficient statistic</li>
+<li>Let \(Z_1, \ldots, Z_n \sim \mathcal{N}(0, 1)\) then
+<ul class="org-ul">
+<li>\(\sum Z_i \sim \mathcal{N}(0, n)\) as sum of normal RVs is a normal RV</li>
+<li>\(\sum Z_i^2 \sim \chi_n^2\)</li>
+<li>\(\sum (Z_i - \bar{Z})^2 \sim \chi_{n-1}^2\) where \(\bar{Z} = \frac{1}{n}\sum Z_i\)</li>
+</ul></li>
+<li>Conditional bivariate normal
+<ul class="org-ul">
+<li>\(E[Y|X=x] = \mu_y + \rho \sigma_Y \frac{x - \mu_X}{\sigma_X}\)</li>
+<li>\(Var(Y|X=x) = (1 - \rho^2)\sigma_Y^2\)</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgbf27d7d" class="outline-3">
+<h3 id="orgbf27d7d">Gamma Distribution</h3>
+<div class="outline-text-3" id="text-orgbf27d7d">
+<p>
+\(Gamma(k, \theta)\) where \(\theta\) is scale parameter
+</p>
+<ul class="org-ul">
+<li>\(X \sim Gamma(k, \theta)\) then \(aX \sim Gamma(k, a\theta)\)</li>
+<li>Mean = \(k\theta\) and Variance = \(k\theta^2\)</li>
+<li>MGF: \(\frac{1}{(1-\theta t)^k}\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3900299" class="outline-3">
+<h3 id="org3900299">\(\chi^2_n\) distribution</h3>
+<div class="outline-text-3" id="text-org3900299">
+<ul class="org-ul">
+<li>Mean = \(n\) ; Variance = \(2n\)</li>
+<li>\(\sum_{i=0}^{k} Z_i^2 \sim \chi^2_k\) where \(Z_i\) are standard normal RVs</li>
+<li>\(\chi^2_n \sim Gamma(\frac{n}{2}, 2)\) in \((k, \theta)\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org256eceb" class="outline-3">
+<h3 id="org256eceb">Poisson Distribution</h3>
+<div class="outline-text-3" id="text-org256eceb">
+<ul class="org-ul">
+<li>A complete sufficient statistic for \(Poi(\lambda)\) is \(\sum_{i=0}^{n} X_i\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd9f577f" class="outline-3">
+<h3 id="orgd9f577f">Exponential distribution</h3>
+<div class="outline-text-3" id="text-orgd9f577f">
+<ul class="org-ul">
+<li>\(Exp(\lambda)\) has \(\sum_{i=1}^{n} X_i\) as minimal sufficient</li>
+<li>Mean: \(\frac{1}{\lambda}\) and Variance: \(\frac{1}{\lambda^2}\)</li>
+<li>PDF: \(\lambda e^{-\lambda x}\) ; CDF: \(1 - e^{-\lambda x}\)</li>
+<li>MGF: \(\frac{\lambda}{\lambda - t}\)</li>
+<li>\(X_1, \ldots ,X_n\) are iid then \(\sum_{i=1}^{n} X_i \sim Gamma(n, \frac{1}{\lambda})\) in \((k, \theta)\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1e47c27" class="outline-3">
+<h3 id="org1e47c27">Uniform distribution</h3>
+<div class="outline-text-3" id="text-org1e47c27">
+<ul class="org-ul">
+<li>\(\max X_i\) is complete sufficient statistic for \(U(0, \theta)\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org64cefeb" class="outline-3">
+<h3 id="org64cefeb">Types of convergence</h3>
+<div class="outline-text-3" id="text-org64cefeb">
+<ul class="org-ul">
+<li>Almost sure: \(P({\omega : X_n(\omega) \rightarrow X(\omega)}) = 1\)</li>
+<li>In probability: \(P(|X_n - X| > \epsilon) \rightarrow 0\) as \(n \rightarrow \infty\)</li>
+<li>rth mean : \(E|X_n - X|^r \rightarrow 0\) as \(n \rightarrow \infty\)</li>
+<li>distribution: \(F_n(x) \rightarrow F(x)\) as \(n \rightarrow \infty\)</li>
+<li>A.S. =&gt; In Probability ; rth mean =&gt; In Probability <br />
+In Probability =&gt; In distribution</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org24cd5f3" class="outline-3">
+<h3 id="org24cd5f3">Strong Law of Large Numbers</h3>
+<div class="outline-text-3" id="text-org24cd5f3">
+<p>
+\(\{X_i\}\) be i.i.d. sequence then \(\overline{X} = \frac{1}{n}\sum_{i=1}^{n} X_i\)
+converges to \(\mu\) almost surely
+</p>
+</div>
+</div>
+<div id="outline-container-org1afd12d" class="outline-3">
+<h3 id="org1afd12d">Central Limit Theorem</h3>
+<div class="outline-text-3" id="text-org1afd12d">
+<p>
+\(P \left(\frac{\sqrt{n}(\overline{X}_n - \mu)}{\sigma} \le a\right) \rightarrow \Phi(a) = \int_{-\infty}^{a} \frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}} \, dt\)
+i.e. \(\frac{\overline{X}_n - \mu}{\sigma/\sqrt{n}}\) converges in distribution to \(\mathcal{N}(0, 1)\)
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee3f834" class="outline-2">
+<h2 id="orgee3f834">Chapter 1</h2>
+<div class="outline-text-2" id="text-orgee3f834">
+<div class="theorem" id="orgf272a70">
+<p>
+Let \((X_1, X_2, \ldots , X_n)\) be discrete RV with support \(S_X\) and JPMF \(f_X\).
+Let \(Y_i = g_i(\vec{X})\). Then \(\vec{Y} = (Y_1, \ldots, Y_k)\) is a discrete RV with JPMF
+</p>
+
+<p>
+\[
+   f_Y(y_1, \ldots, y_k) =  \begin{cases}
+                            \sum_{x \in A_y}{f_X(x)}
+			    & \text{if } (y_1, \ldots y_k) \in S_\vec{Y}\\
+                            0  & \text{otherwise}
+                            \end{cases}
+   \]
+</p>
+
+<p>
+where \(A_y = {x \in S_X : g_i(x) = y_i, i = 1 \ldots k}\)
+and   \(S_Y = \{(g_1(x), \ldots g_k(x)) : x \in S_X \}\)
+</p>
+
+</div>
+
+<div class="theorem" id="org1f84878">
+<p>
+Let \(X = (X_1, \ldots, X_n)\) be a continuous RV with JPDF \(f_X\). If
+\(y = g(x) = (g_1(x), \ldots, g_n(x))\) be a invertible function s.t.
+</p>
+
+<ol class="org-ol">
+<li>both the mapping \(g\) and the inverse \(x_i = h_i(y)\) are continuous</li>
+<li>the partial derivative \(\frac{\partial x_i}{\partial y_j}\) exists and is continuous</li>
+<li>The Jacobian of inverse transform \(J = \text{det} \left(\frac{\partial x_i}{\partial y_j}\right) \ne 0\) on
+the range of transformation</li>
+</ol>
+
+<p>
+Then \(\vec{Y} = g(\vec{X})\) has the JPDF
+\[ f_Y(y) = f_X\left(h_1(y), \ldots, h_n(y)\right) |J| \]
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdcd1f80" class="outline-2">
+<h2 id="orgdcd1f80">Chapter 2</h2>
+<div class="outline-text-2" id="text-orgdcd1f80">
+</div>
+<div id="outline-container-org714f20b" class="outline-3">
+<h3 id="org714f20b">Statistic</h3>
+<div class="outline-text-3" id="text-org714f20b">
+<p>
+Random variable \(Y = T(X_1, \ldots X_n)\) is a statistic if it is not a function of
+unknown parameters
+</p>
+</div>
+</div>
+<div id="outline-container-orgbb2b0b5" class="outline-3">
+<h3 id="orgbb2b0b5">Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-orgbb2b0b5">
+<p>
+A statistic \(T\) for \(X\) is sufficient iff the conditional distribution of \(X\) given \(T(X)\)
+does not include \(\theta\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgede8460" class="outline-3">
+<h3 id="orgede8460">Neyman-Fischer Factorization Theorem</h3>
+<div class="outline-text-3" id="text-orgede8460">
+<p>
+\(T\) is a sufficient statistic for \(X\) if and only if \(f_{X}(x, \theta) = h(x)g_{\theta}(T(x))\).
+</p>
+</div>
+<div id="outline-container-orgdff1209" class="outline-4">
+<h4 id="orgdff1209">Corollary</h4>
+<div class="outline-text-4" id="text-orgdff1209">
+<p>
+If \(T\) is sufficient and \(f\) is one-to-one then \(f(T)\) is also sufficient.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbc9e877" class="outline-3">
+<h3 id="orgbc9e877">Minimal Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-orgbc9e877">
+<p>
+Statistic \(T\) is minimal sufficient if \(T\) is a function of any other sufficient
+statistic.
+</p>
+</div>
+</div>
+<div id="outline-container-org0eaacc0" class="outline-3">
+<h3 id="org0eaacc0">Theorem for finding minimal sufficient statistic</h3>
+<div class="outline-text-3" id="text-org0eaacc0">
+<p>
+If the expression \(h(x, y, \theta)\) doesn't involve \(\theta\) iff \(T(x)=T(y)\) then
+\(T\) is a minimal sufficient statistic. Here \(x = (x_1, \ldots x_n)\;, \; y = \left( y_1, \ldots, y_n \right)\)
+\[
+   h(x,y,\theta) = \frac{\prod_{i=1}^{n} f(x_i, \theta)}{\prod_{i=1}^{n} f(y_i, \theta)}
+   \]
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgcf88867"></a>NOTE: See examples in lecture notes<br /></li>
+</ul>
+</div>
+<div id="outline-container-org4d47a47" class="outline-3">
+<h3 id="org4d47a47">Fischer Information</h3>
+<div class="outline-text-3" id="text-org4d47a47">
+<p>
+Fischer information about parameter \(\theta\) defined in \(\boldsymbol{X}\) is given by
+\[
+   \mathcal{I}_{\boldsymbol{X}}(\theta)
+   = Var\left( \frac{\partial \ln f_{\boldsymbol{X}}(\boldsymbol{X}, \theta)}{\partial \theta} \right) % ignoring this definition ATM
+   = \mathbb{E}_{\theta}\left[\left(\frac{\partial \ln f_{\boldsymbol{X}}(\boldsymbol{X}, \theta)}{\partial \theta}\right)^2\right] 
+   = -\mathbb{E}\left[\frac{\partial^{2} \ln f_{\boldsymbol{X}}(\boldsymbol{X}, \theta)}{\partial \theta^{2}}\right]
+   \]
+</p>
+</div>
+</div>
+<div id="outline-container-org16c1037" class="outline-3">
+<h3 id="org16c1037">RS Information</h3>
+<div class="outline-text-3" id="text-org16c1037">
+<p>
+Let \(X_1, \ldots , X_n\) be a RS from population with PMF \(f(., \theta)\) then the
+Fischer Information contained in the RS is
+\[\mathcal{I}_{\boldsymbol{X}}(\theta) = n \mathcal{I}_{X_1}(\theta)\]
+</p>
+</div>
+</div>
+<div id="outline-container-org6652cb6" class="outline-3">
+<h3 id="org6652cb6">Information and Statistics</h3>
+<div class="outline-text-3" id="text-org6652cb6">
+<p>
+Let \(\boldsymbol{X}\) be a RS and \(\boldsymbol{T}\) be a statistic. Then \(\mathcal{I}_{\boldsymbol{X}}(\theta) \ge \mathcal{I}_{\boldsymbol{T}}(\theta)\) forall \(\theta\) and
+equality holds for all \(\theta\) iff \(\boldsymbol{T}\) is a sufficient statistic for \(\theta\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgbd17a60" class="outline-3">
+<h3 id="orgbd17a60">Family of Distributions induced by a statistic</h3>
+<div class="outline-text-3" id="text-orgbd17a60">
+<p>
+Let \(\boldsymbol{T}\) be a statistic of R.S. \(X_1, \ldots X_n\) with the PDF/PMF \(g(\boldsymbol{t, \theta})\).
+The family of distributions induced by \(T\) is:
+\(\left\{g(. \, , \, \boldsymbol{\theta}) ~ : ~ \boldsymbol{\theta} \in \Theta \right\}\)
+</p>
+</div>
+</div>
+<div id="outline-container-org1dd756c" class="outline-3">
+<h3 id="org1dd756c">Complete Family</h3>
+<div class="outline-text-3" id="text-org1dd756c">
+<p>
+A family \(\left\{g(. \, , \, \boldsymbol{\theta}) ~ : ~ \boldsymbol{\theta} \in \Theta\right\}\) is called complete if for every function \(h\)
+\(\mathbb{E}_{\theta}(h(\boldsymbol{T})) = 0 ~, ~ \forall ~ \theta\) implies \(h(\boldsymbol{T}) = 0\) with probability \(1\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgff62762" class="outline-3">
+<h3 id="orgff62762">Complete Statistic</h3>
+<div class="outline-text-3" id="text-orgff62762">
+<p>
+Let \(X\) be a RV whose distribution depends on \(\boldsymbol{\theta}\). Let \(T\) be a statistic i.e.
+a measurable function of RS \(X_1, \ldots X_n\) . \(T\) is said to be complete for
+distribution of \(X\) if for every measurable function \(g\) :
+\(E_{\theta}(g(T)) = 0 ~, ~ \forall ~ \theta ~ \implies ~ \boldsymbol{P}_{\theta}(g(T) = 0) = 1 ~, ~ \forall ~ \theta\)
+</p>
+
+<p>
+OR
+</p>
+
+<p>
+A statistic is complete if the family induced by it is complete
+</p>
+</div>
+</div>
+<div id="outline-container-org0410095" class="outline-3">
+<h3 id="org0410095">Complete Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-org0410095">
+<p>
+\(T\) is complete sufficient if \(T\) is complete and sufficient for \(\theta\)
+</p>
+</div>
+</div>
+<div id="outline-container-org3e3210c" class="outline-3">
+<h3 id="org3e3210c">Fact</h3>
+<div class="outline-text-3" id="text-org3e3210c">
+<p>
+If \(T\) is complete and \(U = g(T)\) where \(g\) is one-to-one, then \(U\) is complete
+</p>
+</div>
+</div>
+<div id="outline-container-org85b49e6" class="outline-3">
+<h3 id="org85b49e6">Complete sufficient statistic is minimal sufficient</h3>
+<div class="outline-text-3" id="text-org85b49e6">
+<p>
+A complete sufficient statistic is minimal sufficient
+</p>
+</div>
+</div>
+<div id="outline-container-org250b289" class="outline-3">
+<h3 id="org250b289">Exponential Family Definition</h3>
+<div class="outline-text-3" id="text-org250b289">
+<p>
+\(X\) is R.V. whose PMF/PDF is given by \(f(., \boldsymbol{\theta})\) where \(\boldsymbol{\theta} = (\theta_1, \ldots \theta_k)\). We say that \(f(., \boldsymbol{\theta})\) belongs to
+k-parameter exponential family if
+\[ f(x, \boldsymbol{\theta}) = a(\boldsymbol{\theta})g(x)e^{\sum_{i=1}^{k} b_i(\boldsymbol{\theta})R_i(x)} \]
+where \(a(\boldsymbol{\theta}) \ge 0\) and \(g(x) \ge 0\)
+</p>
+<ul class="org-ul">
+<li>if \(\Theta\) is contained in k-dimensional rectangle then the family is said to
+have full rank</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd7dea71" class="outline-3">
+<h3 id="orgd7dea71">Exponential Family Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-orgd7dea71">
+<p>
+Let \(X_1, \ldots X_n\) be a RS belong to a k-parameter family with full-rank.
+\[ f(x, \boldsymbol{\theta}) = a(\boldsymbol{\theta})g(x)e^{\sum_{i=1}^{n} b_i(\boldsymbol{\theta})R_i(x)} \]
+and let \(T_k = \sum_{i=1}^{n} R_k(X_i)\) then \((T_1, \ldots, T_n)\) is jointly minimal sufficient for \(\boldsymbol{\theta}\)
+</p>
+</div>
+</div>
+<div id="outline-container-org557fd25" class="outline-3">
+<h3 id="org557fd25">Exponential Family's minimal sufficient statistic is also complete</h3>
+<div class="outline-text-3" id="text-org557fd25">
+<p>
+The above minimal sufficient statistic \((T_1, \ldots, T_n)\) for \(\boldsymbol{\theta}\) is also complete
+</p>
+</div>
+</div>
+<div id="outline-container-orgfc4ee6c" class="outline-3">
+<h3 id="orgfc4ee6c">Basu's Theorem</h3>
+<div class="outline-text-3" id="text-orgfc4ee6c">
+<p>
+If \(\boldsymbol{U}\) is a complete sufficient statistic for \(\boldsymbol{\theta}\) and \(\boldsymbol{W}\) be an
+ancillary statistic for \(\boldsymbol{\theta}\) then \(\boldsymbol{U}\) and \(\boldsymbol{W}\) are independent
+</p>
+</div>
+</div>
+<div id="outline-container-org862bdb9" class="outline-3">
+<h3 id="org862bdb9">Maximum Likelihood Estimator (MLE)</h3>
+<div class="outline-text-3" id="text-org862bdb9">
+<p>
+For \(\boldsymbol{x} \in \mathcal{X}\), let \(\boldsymbol{\hat{\theta}}(\boldsymbol{x})\) be the value at which \(L(\boldsymbol{\theta}, \boldsymbol{x}) = \prod_{k=1}^{n} f(x_i, \boldsymbol{\theta})\) attains
+its maximum value as function of \(\boldsymbol{\theta}\) with \(\boldsymbol{x}\) held fixed.
+Then the MLE of \(\boldsymbol{\theta}\) based on a RS \(\boldsymbol{X}\) is \(\boldsymbol{\hat{\theta}}(\boldsymbol{X})\).
+</p>
+</div>
+</div>
+<div id="outline-container-org30ce922" class="outline-3">
+<h3 id="org30ce922">Invariance Property of MLE</h3>
+<div class="outline-text-3" id="text-org30ce922">
+<p>
+If \(\boldsymbol{\hat{\theta}}\) is MLE of \(\boldsymbol{\theta}\) then for any function \(\tau(.)\), MLE of \(\tau(\boldsymbol{\theta})\) is \(\tau(\boldsymbol{\hat{\theta}})\)
+</p>
+</div>
+</div>
+<div id="outline-container-org3e31426" class="outline-3">
+<h3 id="org3e31426">Unbiased Estimator</h3>
+<div class="outline-text-3" id="text-org3e31426">
+<p>
+\(T\) is said to be an unbiased estimator of \(\tau(\boldsymbol{\theta})\) if \(E_{\boldsymbol{\theta}}(T) = \tau(\boldsymbol{\theta})\) for all \(\boldsymbol{\theta}\)
+</p>
+</div>
+</div>
+<div id="outline-container-orge51997b" class="outline-3">
+<h3 id="orge51997b">Bias</h3>
+<div class="outline-text-3" id="text-orge51997b">
+<p>
+Bias of statistic \(T\) as an estimator of \(\tau(\boldsymbol{\theta})\) is defined as
+\(B_T(\boldsymbol{\theta}) = E_{\boldsymbol{\theta}}(T) - \tau(\boldsymbol{\theta})\)
+</p>
+</div>
+</div>
+<div id="outline-container-org628cc31" class="outline-3">
+<h3 id="org628cc31">Mean-Square Error (MSE)</h3>
+<div class="outline-text-3" id="text-org628cc31">
+<p>
+Define MSE of statistic \(T\) as an estimator of \(\tau(\boldsymbol{\theta})\) as
+\(MSE_T(\boldsymbol{\theta}) = E[(T - \tau(\boldsymbol{\theta}))^2]\)
+</p>
+<ul class="org-ul">
+<li>\(MSE_T(\boldsymbol{\theta}) = Var_{\boldsymbol{\theta}}(T) + (B_T(\boldsymbol{\theta}))^2\) where \(B_T(\boldsymbol{\theta}) = E(T) - \tau(\boldsymbol{\theta})\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2de632c" class="outline-3">
+<h3 id="org2de632c">Uniform Minimum Variance Unbiased Estimator (UMVUE)</h3>
+<div class="outline-text-3" id="text-org2de632c">
+<p>
+Let \(\mathcal{C}\) be the set of all unbiased estimators of \(\tau(\boldsymbol{\theta})\) then \(T \in \mathcal{C}\) is called UMVUE
+if \(Var_{\boldsymbol{\theta}}(T) \le Var_{\boldsymbol{\theta}}(T^*) \quad \forall ~ \boldsymbol{\theta} \in \Theta\)
+</p>
+</div>
+</div>
+<div id="outline-container-org98783b9" class="outline-3">
+<h3 id="org98783b9">Theorem (UMVUE)</h3>
+<div class="outline-text-3" id="text-org98783b9">
+<p>
+Let \(X_1, \ldots X_n\) be RS with PDF/PMF \(f(., \boldsymbol{\theta})\). Let \(T\) be an estimator and
+let \(\mathcal{U}\) be set of estimators of zero then \(T\) is UMVUE if and only if
+\[Cov_{\boldsymbol{\theta}}(T, U) = E_{\boldsymbol{\theta}}(TU) = 0 \quad \forall ~ U \in \mathcal{U} \text{ and } \boldsymbol{\theta} \in \Theta\]
+</p>
+</div>
+</div>
+<div id="outline-container-orgb349a3c" class="outline-3">
+<h3 id="orgb349a3c">Uniqueness of UMVUE</h3>
+<div class="outline-text-3" id="text-orgb349a3c">
+<p>
+If \(T\) is the UMVUE of \(\tau(\boldsymbol{\theta})\) then it is the unique UMVUE of \(\tau(\boldsymbol{\theta})\)
+with probability one
+</p>
+</div>
+</div>
+<div id="outline-container-orge7d2392" class="outline-3">
+<h3 id="orge7d2392">Rao-Blackwell Theorem</h3>
+<div class="outline-text-3" id="text-orge7d2392">
+<p>
+Let \(T\) be an UE of \(\tau(\boldsymbol{\theta})\) and \(\boldsymbol{U}\) be a sufficient statistic for \(\boldsymbol{\theta}\) then
+</p>
+<ol class="org-ol">
+<li>\(W = E(T|\boldsymbol{U})\) is a UE of \(\tau(\boldsymbol{\theta})\).</li>
+<li>\(Var(W) \le Var_{\boldsymbol{\theta}}(T)\) . Equality holds iff \(P(W = T) = 1\)</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org72d0d7d" class="outline-3">
+<h3 id="org72d0d7d">Cramer-Rao Inequality</h3>
+<div class="outline-text-3" id="text-org72d0d7d">
+<p>
+Let \(T\) be a UE of \(\tau(\boldsymbol{\theta})\) and \(\tau'(\boldsymbol{\theta})\) is finite for all \(\boldsymbol{\theta}\). Then
+\[ Var_{\boldsymbol{\theta}}(T) \ge \frac{(\tau'(\boldsymbol{\theta}))^2}{n\mathcal{I}_{X_1}(\boldsymbol{\theta})}\]
+RHS is called Cramer-Rao Lower Bound (CRLB)
+</p>
+</div>
+</div>
+<div id="outline-container-org65243ae" class="outline-3">
+<h3 id="org65243ae">Lehmann-Scheffe Theorem - I</h3>
+<div class="outline-text-3" id="text-org65243ae">
+<p>
+Let \(T\) be a UE of \(\tau(\boldsymbol{\theta})\), \(\boldsymbol{U}\) be a complete sufficient statistic for \(\boldsymbol{\theta}\).
+Define \(g(\boldsymbol{u}) = \mathbb{E}\left[T | \boldsymbol{U} = \boldsymbol{u}\right]\). Then:
+\(W = g(\boldsymbol{U})\) is the unique UMVUE of \(\tau(\boldsymbol{\theta})\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgef97182" class="outline-3">
+<h3 id="orgef97182">Lehmann-Scheffe Theorem - II</h3>
+<div class="outline-text-3" id="text-orgef97182">
+<p>
+Let \(T\) be a UE of \(\tau(\boldsymbol{\theta})\) and \(\boldsymbol{U}\) be a complete sufficient statistic for \(\boldsymbol{\theta}\).
+Then \(W = g(\boldsymbol{U})\) is the unique UMVUE of \(\tau(\boldsymbol{\theta})\)
+</p>
+</div>
+</div>
+<div id="outline-container-orga370655" class="outline-3">
+<h3 id="orga370655">Consistent Estimator</h3>
+<div class="outline-text-3" id="text-orga370655">
+<p>
+Let \(T_n\) be an estimator based on a RS of size \(n\). Then
+\(T_n\) is said to be consistent estimator of \(\theta\) if the sequence
+\(\{T_n\}\) converges in probability to \(\theta\) i.e. \(\lim_{n\rightarrow \infty}P(|T_n - \theta| < \epsilon) = 1\)
+</p>
+</div>
+</div>
+<div id="outline-container-org08359c4" class="outline-3">
+<h3 id="org08359c4">Consistency of MLE</h3>
+<div class="outline-text-3" id="text-org08359c4">
+<p>
+Let \(\theta \in \Theta \subset \mathbb{R}\) and let the following conditions hold
+</p>
+<ul class="org-ul">
+<li>\(\frac{\partial \ln f(x)}{\partial \theta}, \frac{\partial^2 \ln f(x)}{\partial \theta^2}, \frac{\partial^3 \ln f(x)}{\partial \theta^3}\) are finite forall \(x \in \mathbb{R}, \theta \in \Theta\)</li>
+<li>\(\int_{-\infty}^{\infty} \frac{\partial f(x; \theta)}{\partial \theta} \, dx = 0\), \(\int_{-\infty}^{\infty} \frac{\partial^{2} f(x; \theta)}{\partial \theta^{2}} \, dx = 0\) and \(\int_{-\infty}^{\infty} \left\{\frac{\partial f(x; \theta)}{\partial \theta}\right\}^2 \, dx > 0\) for all \(\theta\)</li>
+<li>forall \(\theta\), \(\left|\frac{\partial^{3} f(x; \theta)}{\partial \theta^{3}}\right| < a(x)\) where \(E(a(X_1)) < b\) where \(b\) is a constant independent of \(\theta\)</li>
+</ul>
+<p>
+Then MLE \(\widehat{\theta}_n(x)\) is a consistent estimator of \(\theta\)
+</p>
+</div>
+</div>
+<div id="outline-container-org9f2b268" class="outline-3">
+<h3 id="org9f2b268">Asymptotic Normality of MLE</h3>
+<div class="outline-text-3" id="text-org9f2b268">
+<p>
+Under the above conditions, \(\sqrt{n \mathcal{I}_{X_1}(\theta)}\left(\widehat{\theta}_n(X) - \theta\right) \rightarrow Z\) where \(Z \sim N(0, 1)\)
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org1244896" class="outline-2">
+<h2 id="org1244896">Chapter 3</h2>
+<div class="outline-text-2" id="text-org1244896">
+</div>
+<div id="outline-container-orgf77c9eb" class="outline-3">
+<h3 id="orgf77c9eb">Critical/Rejection Region</h3>
+<div class="outline-text-3" id="text-orgf77c9eb">
+<p>
+Region where we reject the null hypothesis \(H_0\)
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">H<sub>0</sub> true</th>
+<th scope="col" class="org-left">H<sub>1</sub> true</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Accept H<sub>0</sub></td>
+<td class="org-left">OK</td>
+<td class="org-left">Type-II error</td>
+</tr>
+
+<tr>
+<td class="org-left">Accept H<sub>1</sub></td>
+<td class="org-left">Type-I error</td>
+<td class="org-left">OK</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-org7e32f69" class="outline-3">
+<h3 id="org7e32f69">Power function</h3>
+<div class="outline-text-3" id="text-org7e32f69">
+<p>
+Probability of rejecting the null hypothesis \(H_0\) when
+\(\boldsymbol{\theta}\) is the true value of parameter
+\[\beta(\boldsymbol{\theta}) = \mathbb{P}(\boldsymbol{X} \in R)\]
+</p>
+</div>
+</div>
+<div id="outline-container-org8e82908" class="outline-3">
+<h3 id="org8e82908">Size of test</h3>
+<div class="outline-text-3" id="text-org8e82908">
+<p>
+For test with \(H_0 : \boldsymbol{\theta} \in \Theta_0\) and \(H_1 : \boldsymbol{\theta} \in \Theta_1\) with
+power function \(\beta\), the size of test is \(\alpha\)
+\[\alpha = \sup_{\boldsymbol{\theta} \in \Theta_0} \beta(\boldsymbol{\theta})\]
+It can be considered the worst possible probability
+of type-I error
+</p>
+</div>
+</div>
+<div id="outline-container-orgea0600d" class="outline-3">
+<h3 id="orgea0600d">Level of test</h3>
+<div class="outline-text-3" id="text-orgea0600d">
+<p>
+A test is level \(\alpha\) if \(\sup_{\boldsymbol{\theta} \in \Theta_0}\beta(\boldsymbol{\theta}) \le \alpha\)
+</p>
+</div>
+</div>
+<div id="outline-container-orga23a8b6" class="outline-3">
+<h3 id="orga23a8b6">Critical/Test function</h3>
+<div class="outline-text-3" id="text-orga23a8b6">
+<p>
+A function \(\psi : \mathcal{X}^n \rightarrow [0, 1]\) is called critical func/test func
+if \(\psi(\boldsymbol{x})\) is the probability of rejecting \(H_0\) if \(\boldsymbol{X} = \boldsymbol{x}\)
+</p>
+</div>
+</div>
+<div id="outline-container-org4d866ba" class="outline-3">
+<h3 id="org4d866ba">Power function</h3>
+<div class="outline-text-3" id="text-org4d866ba">
+<p>
+\[\beta(\boldsymbol{\theta}) = \mathbb{E}_{\boldsymbol{\theta}}\left[\psi(\boldsymbol{X})\right]\]
+Power function is the expectation of rejection given \(\boldsymbol{\theta}\)
+</p>
+</div>
+</div>
+<div id="outline-container-org491d18a" class="outline-3">
+<h3 id="org491d18a">Uniformly Most Powerful Test (UMP)</h3>
+<div class="outline-text-3" id="text-org491d18a">
+<p>
+For a collection of tests \(\mathcal{C}_{\alpha}\) of size \(\alpha\). \(\beta \in \mathcal{C}_{\alpha}\) is the uniformly most
+powerful test at level \(\alpha\) if \(\beta(\boldsymbol{\theta}) \ge \beta^*(\boldsymbol{\theta})\) for all \(\boldsymbol{\theta} \in \Theta_1\) and \(\beta^*\) a
+power function of any test in \(\mathcal{C}_\alpha\).
+</p>
+</div>
+</div>
+<div id="outline-container-orge8dbbd9" class="outline-3">
+<h3 id="orge8dbbd9">Simple Null vs Simple Alternative</h3>
+<div class="outline-text-3" id="text-orge8dbbd9">
+<p>
+Let \(H_0 : \boldsymbol{\theta} = \boldsymbol{\theta}_0\) and \(H_1 : \boldsymbol{\theta} = \boldsymbol{\theta}_1\). Then the MP level \(\alpha\) test is
+\[
+   \psi(\boldsymbol{x}) = \begin{cases} 1 & L(\boldsymbol{\theta}_1) > kL(\boldsymbol{\theta}_0) \\
+   \gamma & L(\boldsymbol{\theta}_1) = kL(\boldsymbol{\theta}_0) \\
+   0 & L(\boldsymbol{\theta}_1) < kL(\boldsymbol{\theta}_0)\end{cases}\]
+where \(k\) and \(\gamma\) are such that \(\beta(\boldsymbol{\theta}_0) = E_{\boldsymbol{\theta}_0}(\psi(\boldsymbol{X})) = \alpha\).
+See notes for proof.
+</p>
+</div>
+</div>
+<div id="outline-container-org7c3f1a1" class="outline-3">
+<h3 id="org7c3f1a1">Monotone Likelihood Ratio (MLR) Property</h3>
+<div class="outline-text-3" id="text-org7c3f1a1">
+<p>
+A family of distributions \(\{f(., \theta): \theta \in \Theta\}\) has MLR property in
+real valued statistic \(T(\boldsymbol{X})\) if forall \(\theta < \theta^*\). \(\frac{L(\theta^*; \boldsymbol{x})}{L(\theta, \boldsymbol{x})}\) is a non-decreasing
+function of \(T(\boldsymbol{x})\).
+</p>
+</div>
+</div>
+<div id="outline-container-org1ca52ed" class="outline-3">
+<h3 id="org1ca52ed">Simple Null vs One sided alternative</h3>
+<div class="outline-text-3" id="text-org1ca52ed">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">\(H_0: \theta \le \theta_0\)</th>
+<th scope="col" class="org-left">\(H_0 : \theta \ge \theta_0\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">MLR (non-decreasing)</td>
+<td class="org-left">Case 1</td>
+<td class="org-left">Case 2</td>
+</tr>
+
+<tr>
+<td class="org-left">MLR (non-increasing)</td>
+<td class="org-left">Case 3</td>
+<td class="org-left">Case 4</td>
+</tr>
+</tbody>
+</table>
+<ul class="org-ul">
+<li><b>Case 1</b>: \(H_0: \theta \le \theta_0\) and MLR (\(\frac{L(\theta^*; \boldsymbol{x})}{L(\theta, \boldsymbol{x})}\), \(\theta < \theta^*\)) is non-decreasing then
+there exists a UMP level \(\alpha\) test given by
+\[\psi(x) = \begin{cases} 1 & T(x) > k \\
+                 \gamma & T(x) = k \\
+                   0 & T(x) < k\end{cases}\]
+where \(\gamma\) and \(k\) are s.t. \(E_{\theta_0}(\psi(\boldsymbol{X})) = \alpha\)</li>
+<li><b>Case 2</b>:
+\(\psi(x) = \begin{cases} 1 & T(x) < k \\
+                 \gamma & T(x) = k \\
+                   0 & T(x) > k\end{cases}\)</li>
+<li><b>Case 3</b>:
+\(\psi(x) = \begin{cases} 1 & T(x) < k \\
+                 \gamma & T(x) = k \\
+                   0 & T(x) > k\end{cases}\)</li>
+<li><b>Case 4</b>
+\(\psi(x) = \begin{cases} 1 & T(x) > k \\
+                 \gamma & T(x) = k \\
+                   0 & T(x) < k\end{cases}\)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org0f07213" class="outline-2">
+<h2 id="org0f07213">Doubts</h2>
+<div class="outline-text-2" id="text-org0f07213">
+</div>
+<div id="outline-container-org96cbbf6" class="outline-3">
+<h3 id="org96cbbf6">Example 3.17</h3>
+<div class="outline-text-3" id="text-org96cbbf6">
+</div>
+<div id="outline-container-org812ab76" class="outline-4">
+<h4 id="org812ab76">How do we arrive at \(\psi_0\) (MLR property is undefined)?</h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Ashish</p>
+<p class="date">Created: 2021-03-25 Thu 13:54</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
