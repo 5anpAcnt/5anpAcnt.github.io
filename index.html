@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-03-26 Fri 09:07 -->
+<!-- 2021-04-21 Wed 06:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>MA324 Notes</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="Ashish" />
+<meta name="author" content="Ashish Kumar Barnawal" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -240,97 +240,148 @@
 </head>
 <body>
 <div id="content">
+<h1 class="title">MA324 Notes</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2635261">Things to remember</a>
+<li><a href="#orgc3d7aba">Things to remember</a>
 <ul>
-<li><a href="#orga6c3e18">Normal Distribution</a></li>
-<li><a href="#org64c14da">Gamma Distribution</a></li>
-<li><a href="#org8218db6">\(\chi^2_n\) distribution</a></li>
-<li><a href="#orge861d39">Poisson Distribution</a></li>
-<li><a href="#orgddfee37">Exponential distribution</a></li>
-<li><a href="#org90209d8">Uniform distribution</a></li>
-<li><a href="#org4860d48">Types of convergence</a></li>
-<li><a href="#orgfab3df3">Strong Law of Large Numbers</a></li>
-<li><a href="#org2bc3cf9">Central Limit Theorem</a></li>
+<li><a href="#orgb11e877">Distributions</a></li>
+<li><a href="#org3911304">Normal Distribution</a></li>
+<li><a href="#orga46edaa">Gamma Distribution</a></li>
+<li><a href="#org788c2b1">\(\chi^2_n\) distribution</a></li>
+<li><a href="#orgc1adbdd">Poisson Distribution</a></li>
+<li><a href="#org3e0ad81">Exponential distribution</a></li>
+<li><a href="#orgfe3d429">Uniform distribution</a></li>
+<li><a href="#org080fbb5">Types of convergence</a></li>
+<li><a href="#org0aecfe1">Strong Law of Large Numbers</a></li>
+<li><a href="#orga3900a5">Central Limit Theorem</a></li>
 </ul>
 </li>
-<li><a href="#orgfb34679">Chapter 1</a></li>
-<li><a href="#org27de963">Chapter 2</a>
+<li><a href="#org06eab03">Chapter 1</a></li>
+<li><a href="#orgde75a43">Chapter 2</a>
 <ul>
-<li><a href="#org415e1b5">Statistic</a></li>
-<li><a href="#org56b9ee0">Sufficient Statistic</a></li>
-<li><a href="#org75e0f00">Neyman-Fischer Factorization Theorem</a>
+<li><a href="#org417dae4">Statistic</a></li>
+<li><a href="#org279d7fb">Sufficient Statistic</a></li>
+<li><a href="#orge088bb6">Neyman-Fischer Factorization Theorem</a>
 <ul>
-<li><a href="#org62f4283">Corollary</a></li>
+<li><a href="#org7fd7f74">Corollary</a></li>
 </ul>
 </li>
-<li><a href="#org6a90f43">Minimal Sufficient Statistic</a></li>
-<li><a href="#org4355aff">Theorem for finding minimal sufficient statistic</a></li>
-<li><a href="#org81b3dc3">Fischer Information</a></li>
-<li><a href="#org835f771">RS Information</a></li>
-<li><a href="#org2e5aabc">Information and Statistics</a></li>
-<li><a href="#org75eedc4">Family of Distributions induced by a statistic</a></li>
-<li><a href="#orgb7f6ff2">Complete Family</a></li>
-<li><a href="#org9bd15e6">Complete Statistic</a></li>
-<li><a href="#org8c76157">Complete Sufficient Statistic</a></li>
-<li><a href="#org2f0b514">One-to-one map of complete statistic is also complete</a></li>
-<li><a href="#org2e00a72">Complete sufficient statistic is minimal sufficient</a></li>
-<li><a href="#orgb6f8ea5">Family of distribution</a></li>
-<li><a href="#orgd0347eb">Exponential Family Definition</a></li>
-<li><a href="#org3d7099b">Exponential Family Sufficient Statistic</a></li>
-<li><a href="#orgc849c1c">Exponential Family's minimal sufficient statistic is also complete</a></li>
-<li><a href="#org2ebc355">Basu's Theorem</a></li>
-<li><a href="#org4ef6f5a">Maximum Likelihood Estimator (MLE)</a></li>
-<li><a href="#orgbaf97d0">MLE as a function of any sufficient statistic can be found</a></li>
-<li><a href="#org005ed0c">Invariance Property of MLE</a></li>
-<li><a href="#org9d15ca0">Unbiased Estimator</a></li>
-<li><a href="#orgd27b4c1">Bias</a></li>
-<li><a href="#org4a98326">U-estimable function</a></li>
-<li><a href="#org27cd049">Mean-Square Error (MSE)</a></li>
-<li><a href="#orgd8993fc">Uniform Minimum Variance Unbiased Estimator (UMVUE)</a></li>
-<li><a href="#orgf5bf24a">Theorem (UMVUE)</a></li>
-<li><a href="#orgedf547c">Uniqueness of UMVUE</a></li>
-<li><a href="#org4294fa0">Rao-Blackwell Theorem</a></li>
-<li><a href="#orgfc73d8f">Cramer-Rao Inequality</a></li>
-<li><a href="#org05e680b">Lehmann-Scheffe Theorem - I</a></li>
-<li><a href="#org04882f5">Lehmann-Scheffe Theorem - II</a></li>
-<li><a href="#org0c0084d">Consistent Estimator</a></li>
-<li><a href="#orgf207aae">Consistency of MLE</a></li>
-<li><a href="#orge4e840e">Asymptotic Normality of MLE</a></li>
+<li><a href="#org43d8733">Minimal Sufficient Statistic</a></li>
+<li><a href="#org78e4278">Theorem for finding minimal sufficient statistic</a></li>
+<li><a href="#orgc1fa151">Fischer Information</a></li>
+<li><a href="#org72c7e87">RS Information</a></li>
+<li><a href="#org6c4e193">Information and Statistics</a></li>
+<li><a href="#orgadde7f2">Family of Distributions induced by a statistic</a></li>
+<li><a href="#org9607c20">Complete Family</a></li>
+<li><a href="#org4748f86">Complete Statistic</a></li>
+<li><a href="#orga334a69">Complete Sufficient Statistic</a></li>
+<li><a href="#org4387b96">One-to-one map of complete statistic is also complete</a></li>
+<li><a href="#org84ec94d">Complete sufficient statistic is minimal sufficient</a></li>
+<li><a href="#orgfcce4e9">Family of distribution</a></li>
+<li><a href="#orgf2e1003">Exponential Family Definition</a></li>
+<li><a href="#org303fd26">Exponential Family Sufficient Statistic</a></li>
+<li><a href="#org425abf3">Exponential Family's minimal sufficient statistic is also complete</a></li>
+<li><a href="#org8e19c6f">Basu's Theorem</a></li>
+<li><a href="#orgfa5ec3d">Maximum Likelihood Estimator (MLE)</a></li>
+<li><a href="#orgbba9f23">MLE as a function of any sufficient statistic can be found</a></li>
+<li><a href="#org42fc6b8">Invariance Property of MLE</a></li>
+<li><a href="#org211cd06">Unbiased Estimator</a></li>
+<li><a href="#orgf64ac85">Bias</a></li>
+<li><a href="#org576012e">U-estimable function</a></li>
+<li><a href="#orgcdf52b9">Mean-Square Error (MSE)</a></li>
+<li><a href="#orgf411d4f">Uniform Minimum Variance Unbiased Estimator (UMVUE)</a></li>
+<li><a href="#orgd57d510">Theorem (UMVUE)</a></li>
+<li><a href="#org8d846c2">Uniqueness of UMVUE</a></li>
+<li><a href="#org35e4f57">Rao-Blackwell Theorem</a></li>
+<li><a href="#org8fb1a2f">Cramer-Rao Inequality</a></li>
+<li><a href="#org63a3260">Lehmann-Scheffe Theorem - I</a></li>
+<li><a href="#orge3d9063">Lehmann-Scheffe Theorem - II</a></li>
+<li><a href="#orgeb4d139">Consistent Estimator</a></li>
+<li><a href="#org266862a">Consistency of MLE</a></li>
+<li><a href="#orge3ad66b">Asymptotic Normality of MLE</a></li>
 </ul>
 </li>
-<li><a href="#org1ccc867">Chapter 3</a>
+<li><a href="#org1d2530a">Chapter 3</a>
 <ul>
-<li><a href="#orgcf4a874">Critical/Rejection Region</a></li>
-<li><a href="#org326ac68">Power function</a></li>
-<li><a href="#orge3fbdeb">Size of test</a></li>
-<li><a href="#org1032b06">Level of test</a></li>
-<li><a href="#org7bcab01">Critical/Test function</a></li>
-<li><a href="#orge89e412">Power function</a></li>
-<li><a href="#orge60d5f2">Uniformly Most Powerful Test (UMP)</a></li>
-<li><a href="#org90749e5">Neyman-Pearson Lemma (simple null vs simple alternative)</a></li>
-<li><a href="#orgb3b8927">Monotone Likelihood Ratio (MLR) Property</a></li>
-<li><a href="#org973829d">One sided Null vs One sided alternative</a></li>
+<li><a href="#org824e36a">Critical/Rejection Region</a></li>
+<li><a href="#org06b7764">Power function</a></li>
+<li><a href="#org71ef6cc">Size of test</a></li>
+<li><a href="#orgd57f054">Level of test</a></li>
+<li><a href="#org6da9062">Critical/Test function</a></li>
+<li><a href="#org4c0b5e0">Power function</a></li>
+<li><a href="#orga6db149">Uniformly Most Powerful Test (UMP)</a></li>
+<li><a href="#org485210c">Neyman-Pearson Lemma (simple null vs simple alternative)</a></li>
+<li><a href="#org14d5c9b">Simple null vs two sided alternative</a></li>
+<li><a href="#org34452a3">Monotone Likelihood Ratio (MLR) Property</a></li>
+<li><a href="#org9d8ea27">One sided Null vs One sided alternative</a></li>
+<li><a href="#org3cc331e">Likelihood Ratio Tests</a></li>
+</ul>
+</li>
+<li><a href="#org1c48da2">Chapter 4</a>
+<ul>
+<li><a href="#orgf22ace8">Interval Estimator</a></li>
+<li><a href="#org548a616">Coverage Probability</a></li>
+<li><a href="#org1473f08">Confidence Coefficient</a></li>
+<li><a href="#org9f4b5df">Confidence Interval</a></li>
+<li><a href="#org3ac4046">Pivot</a></li>
+<li><a href="#orgfc506a1">Large Sample Size</a>
+<ul>
+<li><a href="#org1461da0">MLE</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgee7b115">Chapter 5</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org0a6a420">Least square estimation:</a></li>
+<li><a href="#org3f4a304">Properties of Least Square Estimates</a></li>
+<li><a href="#orge305d08">Linear Estimator</a></li>
+<li><a href="#org3092fb6">Best Linear Unbiased estimator (BLUE)</a></li>
+<li><a href="#orgb6990e1">Gauss-Markov Theorem</a></li>
+</ul>
+</li>
+<li><a href="#orgc36ce1a">Estimation of Error Variance</a></li>
+<li><a href="#org6fdcfa0">Hypothesis testing on Slope and Intercept</a></li>
+<li><a href="#orgc158875">Interval Estimation</a></li>
+<li><a href="#orgef9b59c"><span class="todo TODO">TODO</span> Prediction of new observation</a></li>
+<li><a href="#org4b9f81d">Coefficient of determination</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2635261" class="outline-2">
-<h2 id="org2635261">Things to remember</h2>
-<div class="outline-text-2" id="text-org2635261">
+<div id="outline-container-orgc3d7aba" class="outline-2">
+<h2 id="orgc3d7aba">Things to remember</h2>
+<div class="outline-text-2" id="text-orgc3d7aba">
 </div>
-<div id="outline-container-orga6c3e18" class="outline-3">
-<h3 id="orga6c3e18">Normal Distribution</h3>
-<div class="outline-text-3" id="text-orga6c3e18">
+<div id="outline-container-orgb11e877" class="outline-3">
+<h3 id="orgb11e877">Distributions</h3>
+<div class="outline-text-3" id="text-orgb11e877">
+<ul class="org-ul">
+<li>\(\sum_{i=0}^{k} Z_i^2 \sim \chi^2_k\) where \(Z_i\) are standard normal RVs</li>
+<li>\(\sqrt{n}\frac{\overline{X} - \mu}{S} \sim t_{n-1}\)  where \(X_i \sim \mathcal{N}(\mu, \sigma^2)\) and \(S^2 = \frac{1}{n-1}\sum_{i=1}^{n} (X_i - \overline{X})\)</li>
+<li>\(\frac{\sigma_2^2 S_X^2}{\sigma_1^2 S_Y^2} \sim F_{n-1,m-1}\) where \(X_i \sim \mathcal{N}(\mu_1, \sigma^2_1)\) and \(Y_i \sim \mathcal{N}(\mu_2, \sigma_2^2)\) and \(S_X^2 = \frac{1}{n-1}\sum_{i=1}^{n} (X_i-\overline{X})\)</li>
+<li>\(\frac{1}{\sigma^2}\sum (X_i - \overline{X})^2 \sim \chi_{n-1}^2\) where \(X_i \sim \mathcal{N}(\mu, \sigma^2)\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3911304" class="outline-3">
+<h3 id="org3911304">Normal Distribution</h3>
+<div class="outline-text-3" id="text-org3911304">
 <ul class="org-ul">
 <li>MGF of \(\mathcal{N}(\mu, \sigma^2)\) is \(e^{\mu t + \frac{\sigma^2 t^2}{2}}\)</li>
-<li>\(\mathcal{N}(\mu, \sigma^2)\) if \(\sigma^2\) is known then \(\bar{X}\) is a complete sufficient statistic</li>
-<li>\(\mathcal{N}(\mu, \sigma^2)\) if both \(\mu\) and \(\sigma^2\) are unknown then \((\sum_{i=0}^{n} X_i, \sum_{i=0}^{n} X_i^2)\) is a complete sufficient statistic</li>
+<li>\(\sum_{i=0}^{k} Z_i^2 \sim \chi^2_k\) where \(Z_i\) are standard normal RVs</li>
+<li>\(X_i \sim \mathcal{N}(\mu, \sigma^2)\) and \(S^2 = \frac{1}{n-1}\sum_{i=1}^{n} (X_i - \overline{X})\) then \(\sqrt{n}\frac{\overline{X} - \mu}{S} \sim t_{n-1}\)</li>
+<li>\(X_i \sim \mathcal{N}(\mu_1, \sigma^2_1)\) and \(Y_i \sim \mathcal{N}(\mu_2, \sigma_2^2)\) and \(S_X^2 = \frac{1}{n-1}\sum_{i=1}^{n} (X_i-\overline{X})\) then \(\frac{\sigma_2^2 S_X^2}{\sigma_1^2 S_Y^2} \sim F_{n-1,m-1}\)</li>
+<li>\(\mathcal{N}(\mu, \sigma^2)\) if \(\sigma^2\) is known then \(\overline{X}\) is a complete sufficient statistic</li>
+<li>\(\mathcal{N}(\mu, \sigma^2)\) if both \(\mu\) and \(\sigma^2\) are unknown then \((n\overline{X} = \sum_{i=0}^{n} X_i, S^2 = \sum_{i=0}^{n} X_i^2)\) is a complete sufficient statistic</li>
 <li>Let \(Z_1, \ldots, Z_n \sim \mathcal{N}(0, 1)\) then
 <ul class="org-ul">
 <li>\(\sum Z_i \sim \mathcal{N}(0, n)\) as sum of normal RVs is a normal RV</li>
@@ -345,9 +396,9 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org64c14da" class="outline-3">
-<h3 id="org64c14da">Gamma Distribution</h3>
-<div class="outline-text-3" id="text-org64c14da">
+<div id="outline-container-orga46edaa" class="outline-3">
+<h3 id="orga46edaa">Gamma Distribution</h3>
+<div class="outline-text-3" id="text-orga46edaa">
 <p>
 \(Gamma(k, \theta)\) where \(\theta\) is scale parameter
 </p>
@@ -360,27 +411,29 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org8218db6" class="outline-3">
-<h3 id="org8218db6">\(\chi^2_n\) distribution</h3>
-<div class="outline-text-3" id="text-org8218db6">
+<div id="outline-container-org788c2b1" class="outline-3">
+<h3 id="org788c2b1">\(\chi^2_n\) distribution</h3>
+<div class="outline-text-3" id="text-org788c2b1">
 <ul class="org-ul">
 <li>Mean = \(n\) ; Variance = \(2n\)</li>
 <li>\(\sum_{i=0}^{k} Z_i^2 \sim \chi^2_k\) where \(Z_i\) are standard normal RVs</li>
 <li>\(\chi^2_n \sim Gamma(\frac{n}{2}, 2)\) in \((k, \theta)\)</li>
+<li>\(X \sim \chi^2_n\) and \(Y \sim \chi^2_m\) then \(\frac{X/n}{Y/m} \sim F_{n,m}\)</li>
+<li>\(\chi_n^2 + \chi_m^2 \sim \chi_{n+m}^2\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge861d39" class="outline-3">
-<h3 id="orge861d39">Poisson Distribution</h3>
-<div class="outline-text-3" id="text-orge861d39">
+<div id="outline-container-orgc1adbdd" class="outline-3">
+<h3 id="orgc1adbdd">Poisson Distribution</h3>
+<div class="outline-text-3" id="text-orgc1adbdd">
 <ul class="org-ul">
 <li>A complete sufficient statistic for \(Poi(\lambda)\) is \(\sum_{i=0}^{n} X_i\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgddfee37" class="outline-3">
-<h3 id="orgddfee37">Exponential distribution</h3>
-<div class="outline-text-3" id="text-orgddfee37">
+<div id="outline-container-org3e0ad81" class="outline-3">
+<h3 id="org3e0ad81">Exponential distribution</h3>
+<div class="outline-text-3" id="text-org3e0ad81">
 <ul class="org-ul">
 <li>\(Exp(\lambda)\) has \(\sum_{i=1}^{n} X_i\) as minimal sufficient</li>
 <li>Mean: \(\frac{1}{\lambda}\) and Variance: \(\frac{1}{\lambda^2}\)</li>
@@ -390,17 +443,17 @@
 </ul>
 </div>
 </div>
-<div id="outline-container-org90209d8" class="outline-3">
-<h3 id="org90209d8">Uniform distribution</h3>
-<div class="outline-text-3" id="text-org90209d8">
+<div id="outline-container-orgfe3d429" class="outline-3">
+<h3 id="orgfe3d429">Uniform distribution</h3>
+<div class="outline-text-3" id="text-orgfe3d429">
 <ul class="org-ul">
 <li>\(\max X_i\) is complete sufficient statistic for \(U(0, \theta)\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4860d48" class="outline-3">
-<h3 id="org4860d48">Types of convergence</h3>
-<div class="outline-text-3" id="text-org4860d48">
+<div id="outline-container-org080fbb5" class="outline-3">
+<h3 id="org080fbb5">Types of convergence</h3>
+<div class="outline-text-3" id="text-org080fbb5">
 <ul class="org-ul">
 <li>Almost sure: \(P({\omega : X_n(\omega) \rightarrow X(\omega)}) = 1\)</li>
 <li>In probability: \(P(|X_n - X| > \epsilon) \rightarrow 0\) as \(n \rightarrow \infty\)</li>
@@ -411,18 +464,18 @@ In Probability =&gt; In distribution</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgfab3df3" class="outline-3">
-<h3 id="orgfab3df3">Strong Law of Large Numbers</h3>
-<div class="outline-text-3" id="text-orgfab3df3">
+<div id="outline-container-org0aecfe1" class="outline-3">
+<h3 id="org0aecfe1">Strong Law of Large Numbers</h3>
+<div class="outline-text-3" id="text-org0aecfe1">
 <p>
 \(\{X_i\}\) be i.i.d. sequence then \(\overline{X} = \frac{1}{n}\sum_{i=1}^{n} X_i\)
 converges to \(\mu\) almost surely
 </p>
 </div>
 </div>
-<div id="outline-container-org2bc3cf9" class="outline-3">
-<h3 id="org2bc3cf9">Central Limit Theorem</h3>
-<div class="outline-text-3" id="text-org2bc3cf9">
+<div id="outline-container-orga3900a5" class="outline-3">
+<h3 id="orga3900a5">Central Limit Theorem</h3>
+<div class="outline-text-3" id="text-orga3900a5">
 <p>
 \(P \left(\frac{\sqrt{n}(\overline{X}_n - \mu)}{\sigma} \le a\right) \rightarrow \Phi(a) = \int_{-\infty}^{a} \frac{1}{\sqrt{2\pi}}e^{-\frac{t^2}{2}} \, dt\)
 i.e. \(\frac{\overline{X}_n - \mu}{\sigma/\sqrt{n}}\) converges in distribution to \(\mathcal{N}(0, 1)\)
@@ -430,10 +483,10 @@ i.e. \(\frac{\overline{X}_n - \mu}{\sigma/\sqrt{n}}\) converges in distribution 
 </div>
 </div>
 </div>
-<div id="outline-container-orgfb34679" class="outline-2">
-<h2 id="orgfb34679">Chapter 1</h2>
-<div class="outline-text-2" id="text-orgfb34679">
-<div class="theorem" id="org58db0de">
+<div id="outline-container-org06eab03" class="outline-2">
+<h2 id="org06eab03">Chapter 1</h2>
+<div class="outline-text-2" id="text-org06eab03">
+<div class="theorem" id="orgbe69783">
 <p>
 Let \((X_1, X_2, \ldots , X_n)\) be discrete RV with support \(S_X\) and JPMF \(f_X\).
 Let \(Y_i = g_i(\vec{X})\). Then \(\vec{Y} = (Y_1, \ldots, Y_k)\) is a discrete RV with JPMF
@@ -456,7 +509,7 @@ and   \(S_Y = \{(g_1(x), \ldots g_k(x)) : x \in S_X \}\)
 
 </div>
 
-<div class="theorem" id="orgd8a0474">
+<div class="theorem" id="org621dd5e">
 <p>
 Let \(X = (X_1, \ldots, X_n)\) be a continuous RV with JPDF \(f_X\). If
 \(y = g(x) = (g_1(x), \ldots, g_n(x))\) be a invertible function s.t.
@@ -478,56 +531,56 @@ Then \(\vec{Y} = g(\vec{X})\) has the JPDF
 </div>
 </div>
 
-<div id="outline-container-org27de963" class="outline-2">
-<h2 id="org27de963">Chapter 2</h2>
-<div class="outline-text-2" id="text-org27de963">
+<div id="outline-container-orgde75a43" class="outline-2">
+<h2 id="orgde75a43">Chapter 2</h2>
+<div class="outline-text-2" id="text-orgde75a43">
 </div>
-<div id="outline-container-org415e1b5" class="outline-3">
-<h3 id="org415e1b5">Statistic</h3>
-<div class="outline-text-3" id="text-org415e1b5">
+<div id="outline-container-org417dae4" class="outline-3">
+<h3 id="org417dae4">Statistic</h3>
+<div class="outline-text-3" id="text-org417dae4">
 <p>
 Random variable \(Y = T(X_1, \ldots X_n)\) is a statistic if it is not a function of
 unknown parameters
 </p>
 </div>
 </div>
-<div id="outline-container-org56b9ee0" class="outline-3">
-<h3 id="org56b9ee0">Sufficient Statistic</h3>
-<div class="outline-text-3" id="text-org56b9ee0">
+<div id="outline-container-org279d7fb" class="outline-3">
+<h3 id="org279d7fb">Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-org279d7fb">
 <p>
 A statistic \(T\) for \(X\) is sufficient iff the conditional distribution of \(X\) given \(T(X)\)
 does not include \(\theta\)
 </p>
 </div>
 </div>
-<div id="outline-container-org75e0f00" class="outline-3">
-<h3 id="org75e0f00">Neyman-Fischer Factorization Theorem</h3>
-<div class="outline-text-3" id="text-org75e0f00">
+<div id="outline-container-orge088bb6" class="outline-3">
+<h3 id="orge088bb6">Neyman-Fischer Factorization Theorem</h3>
+<div class="outline-text-3" id="text-orge088bb6">
 <p>
 \(T\) is a sufficient statistic for \(X\) if and only if \(f_{X}(x, \theta) = h(x)g_{\theta}(T(x))\).
 </p>
 </div>
-<div id="outline-container-org62f4283" class="outline-4">
-<h4 id="org62f4283">Corollary</h4>
-<div class="outline-text-4" id="text-org62f4283">
+<div id="outline-container-org7fd7f74" class="outline-4">
+<h4 id="org7fd7f74">Corollary</h4>
+<div class="outline-text-4" id="text-org7fd7f74">
 <p>
 If \(T\) is sufficient and \(f\) is one-to-one then \(f(T)\) is also sufficient.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org6a90f43" class="outline-3">
-<h3 id="org6a90f43">Minimal Sufficient Statistic</h3>
-<div class="outline-text-3" id="text-org6a90f43">
+<div id="outline-container-org43d8733" class="outline-3">
+<h3 id="org43d8733">Minimal Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-org43d8733">
 <p>
 Statistic \(T\) is minimal sufficient if \(T\) is a function of any other sufficient
 statistic.
 </p>
 </div>
 </div>
-<div id="outline-container-org4355aff" class="outline-3">
-<h3 id="org4355aff">Theorem for finding minimal sufficient statistic</h3>
-<div class="outline-text-3" id="text-org4355aff">
+<div id="outline-container-org78e4278" class="outline-3">
+<h3 id="org78e4278">Theorem for finding minimal sufficient statistic</h3>
+<div class="outline-text-3" id="text-org78e4278">
 <p>
 If the expression \(h(x, y, \theta)\) doesn't involve \(\theta\) iff \(T(x)=T(y)\) then
 \(T\) is a minimal sufficient statistic. Here \(x = (x_1, \ldots x_n)\;, \; y = \left( y_1, \ldots, y_n \right)\)
@@ -538,12 +591,12 @@ If the expression \(h(x, y, \theta)\) doesn't involve \(\theta\) iff \(T(x)=T(y)
 </div>
 
 <ul class="org-ul">
-<li><a id="orgdf199c5"></a>NOTE: See examples in lecture notes<br /></li>
+<li><a id="orge96c93c"></a>NOTE: See examples in lecture notes<br /></li>
 </ul>
 </div>
-<div id="outline-container-org81b3dc3" class="outline-3">
-<h3 id="org81b3dc3">Fischer Information</h3>
-<div class="outline-text-3" id="text-org81b3dc3">
+<div id="outline-container-orgc1fa151" class="outline-3">
+<h3 id="orgc1fa151">Fischer Information</h3>
+<div class="outline-text-3" id="text-orgc1fa151">
 <p>
 Fischer information about parameter \(\theta\) defined in \(\boldsymbol{X}\) is given by
 \[
@@ -555,9 +608,9 @@ Fischer information about parameter \(\theta\) defined in \(\boldsymbol{X}\) is 
 </p>
 </div>
 </div>
-<div id="outline-container-org835f771" class="outline-3">
-<h3 id="org835f771">RS Information</h3>
-<div class="outline-text-3" id="text-org835f771">
+<div id="outline-container-org72c7e87" class="outline-3">
+<h3 id="org72c7e87">RS Information</h3>
+<div class="outline-text-3" id="text-org72c7e87">
 <p>
 Let \(X_1, \ldots , X_n\) be a RS from population with PMF \(f(., \theta)\) then the
 Fischer Information contained in the RS is
@@ -565,18 +618,18 @@ Fischer Information contained in the RS is
 </p>
 </div>
 </div>
-<div id="outline-container-org2e5aabc" class="outline-3">
-<h3 id="org2e5aabc">Information and Statistics</h3>
-<div class="outline-text-3" id="text-org2e5aabc">
+<div id="outline-container-org6c4e193" class="outline-3">
+<h3 id="org6c4e193">Information and Statistics</h3>
+<div class="outline-text-3" id="text-org6c4e193">
 <p>
 Let \(\boldsymbol{X}\) be a RS and \(\boldsymbol{T}\) be a statistic. Then \(\mathcal{I}_{\boldsymbol{X}}(\theta) \ge \mathcal{I}_{\boldsymbol{T}}(\theta)\) forall \(\theta\) and
 equality holds for all \(\theta\) iff \(\boldsymbol{T}\) is a sufficient statistic for \(\theta\)
 </p>
 </div>
 </div>
-<div id="outline-container-org75eedc4" class="outline-3">
-<h3 id="org75eedc4">Family of Distributions induced by a statistic</h3>
-<div class="outline-text-3" id="text-org75eedc4">
+<div id="outline-container-orgadde7f2" class="outline-3">
+<h3 id="orgadde7f2">Family of Distributions induced by a statistic</h3>
+<div class="outline-text-3" id="text-orgadde7f2">
 <p>
 Let \(\boldsymbol{T}\) be a statistic of R.S. \(X_1, \ldots X_n\) with the PDF/PMF \(g(\boldsymbol{t, \theta})\).
 The family of distributions induced by \(T\) is:
@@ -584,18 +637,18 @@ The family of distributions induced by \(T\) is:
 </p>
 </div>
 </div>
-<div id="outline-container-orgb7f6ff2" class="outline-3">
-<h3 id="orgb7f6ff2">Complete Family</h3>
-<div class="outline-text-3" id="text-orgb7f6ff2">
+<div id="outline-container-org9607c20" class="outline-3">
+<h3 id="org9607c20">Complete Family</h3>
+<div class="outline-text-3" id="text-org9607c20">
 <p>
 A family \(\left\{g(. \, , \, \boldsymbol{\theta}) ~ : ~ \boldsymbol{\theta} \in \Theta\right\}\) is called complete if for every function \(h\)
 \(\mathbb{E}_{\theta}(h(\boldsymbol{T})) = 0 ~, ~ \forall ~ \theta\) implies \(h(\boldsymbol{T}) = 0\) with probability \(1\)
 </p>
 </div>
 </div>
-<div id="outline-container-org9bd15e6" class="outline-3">
-<h3 id="org9bd15e6">Complete Statistic</h3>
-<div class="outline-text-3" id="text-org9bd15e6">
+<div id="outline-container-org4748f86" class="outline-3">
+<h3 id="org4748f86">Complete Statistic</h3>
+<div class="outline-text-3" id="text-org4748f86">
 <p>
 Let \(X\) be a RV whose distribution depends on \(\boldsymbol{\theta}\). Let \(T\) be a statistic i.e.
 a measurable function of RS \(X_1, \ldots X_n\) . \(T\) is said to be complete for
@@ -612,33 +665,33 @@ A statistic is complete if the family induced by it is complete
 </p>
 </div>
 </div>
-<div id="outline-container-org8c76157" class="outline-3">
-<h3 id="org8c76157">Complete Sufficient Statistic</h3>
-<div class="outline-text-3" id="text-org8c76157">
+<div id="outline-container-orga334a69" class="outline-3">
+<h3 id="orga334a69">Complete Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-orga334a69">
 <p>
 \(T\) is complete sufficient if \(T\) is complete and sufficient for \(\theta\)
 </p>
 </div>
 </div>
-<div id="outline-container-org2f0b514" class="outline-3">
-<h3 id="org2f0b514">One-to-one map of complete statistic is also complete</h3>
-<div class="outline-text-3" id="text-org2f0b514">
+<div id="outline-container-org4387b96" class="outline-3">
+<h3 id="org4387b96">One-to-one map of complete statistic is also complete</h3>
+<div class="outline-text-3" id="text-org4387b96">
 <p>
 If \(T\) is complete and \(U = g(T)\) where \(g\) is one-to-one, then \(U\) is complete
 </p>
 </div>
 </div>
-<div id="outline-container-org2e00a72" class="outline-3">
-<h3 id="org2e00a72">Complete sufficient statistic is minimal sufficient</h3>
-<div class="outline-text-3" id="text-org2e00a72">
+<div id="outline-container-org84ec94d" class="outline-3">
+<h3 id="org84ec94d">Complete sufficient statistic is minimal sufficient</h3>
+<div class="outline-text-3" id="text-org84ec94d">
 <p>
 A complete sufficient statistic is minimal sufficient
 </p>
 </div>
 </div>
-<div id="outline-container-orgb6f8ea5" class="outline-3">
-<h3 id="orgb6f8ea5">Family of distribution</h3>
-<div class="outline-text-3" id="text-orgb6f8ea5">
+<div id="outline-container-orgfcce4e9" class="outline-3">
+<h3 id="orgfcce4e9">Family of distribution</h3>
+<div class="outline-text-3" id="text-orgfcce4e9">
 <ul class="org-ul">
 <li>\(g\) be a PDF then \(\mathcal{F} = \{g(x-\theta): \theta\in \Theta\}\) is called location family</li>
 <li>Scale family: \(\{\frac{1}{\sigma}g(\frac{x}{\sigma}): \sigma > 0\}\)</li>
@@ -647,9 +700,9 @@ where \(S\) is sqrt of sample variance</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd0347eb" class="outline-3">
-<h3 id="orgd0347eb">Exponential Family Definition</h3>
-<div class="outline-text-3" id="text-orgd0347eb">
+<div id="outline-container-orgf2e1003" class="outline-3">
+<h3 id="orgf2e1003">Exponential Family Definition</h3>
+<div class="outline-text-3" id="text-orgf2e1003">
 <p>
 \(X\) is R.V. whose PMF/PDF is given by \(f(., \boldsymbol{\theta})\) where \(\boldsymbol{\theta} = (\theta_1, \ldots \theta_k)\). We say that \(f(., \boldsymbol{\theta})\) belongs to
 k-parameter exponential family if
@@ -662,9 +715,9 @@ have full rank</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3d7099b" class="outline-3">
-<h3 id="org3d7099b">Exponential Family Sufficient Statistic</h3>
-<div class="outline-text-3" id="text-org3d7099b">
+<div id="outline-container-org303fd26" class="outline-3">
+<h3 id="org303fd26">Exponential Family Sufficient Statistic</h3>
+<div class="outline-text-3" id="text-org303fd26">
 <p>
 Let \(X_1, \ldots X_n\) be a RS belong to a k-parameter family with full-rank.
 \[ f(x, \boldsymbol{\theta}) = a(\boldsymbol{\theta})g(x)e^{\sum_{i=1}^{n} b_i(\boldsymbol{\theta})R_i(x)} \]
@@ -672,26 +725,26 @@ and let \(T_k = \sum_{i=1}^{n} R_k(X_i)\) then \((T_1, \ldots, T_n)\) is jointly
 </p>
 </div>
 </div>
-<div id="outline-container-orgc849c1c" class="outline-3">
-<h3 id="orgc849c1c">Exponential Family's minimal sufficient statistic is also complete</h3>
-<div class="outline-text-3" id="text-orgc849c1c">
+<div id="outline-container-org425abf3" class="outline-3">
+<h3 id="org425abf3">Exponential Family's minimal sufficient statistic is also complete</h3>
+<div class="outline-text-3" id="text-org425abf3">
 <p>
 The above minimal sufficient statistic \((T_1, \ldots, T_n)\) for \(\boldsymbol{\theta}\) is also complete
 </p>
 </div>
 </div>
-<div id="outline-container-org2ebc355" class="outline-3">
-<h3 id="org2ebc355">Basu's Theorem</h3>
-<div class="outline-text-3" id="text-org2ebc355">
+<div id="outline-container-org8e19c6f" class="outline-3">
+<h3 id="org8e19c6f">Basu's Theorem</h3>
+<div class="outline-text-3" id="text-org8e19c6f">
 <p>
 If \(\boldsymbol{U}\) is a complete sufficient statistic for \(\boldsymbol{\theta}\) and \(\boldsymbol{W}\) be an
 ancillary statistic for \(\boldsymbol{\theta}\) then \(\boldsymbol{U}\) and \(\boldsymbol{W}\) are independent
 </p>
 </div>
 </div>
-<div id="outline-container-org4ef6f5a" class="outline-3">
-<h3 id="org4ef6f5a">Maximum Likelihood Estimator (MLE)</h3>
-<div class="outline-text-3" id="text-org4ef6f5a">
+<div id="outline-container-orgfa5ec3d" class="outline-3">
+<h3 id="orgfa5ec3d">Maximum Likelihood Estimator (MLE)</h3>
+<div class="outline-text-3" id="text-orgfa5ec3d">
 <p>
 For \(\boldsymbol{x} \in \mathcal{X}\), let \(\boldsymbol{\hat{\theta}}(\boldsymbol{x})\) be the value at which \(L(\boldsymbol{\theta}, \boldsymbol{x}) = \prod_{k=1}^{n} f(x_i, \boldsymbol{\theta})\) attains
 its maximum value as function of \(\boldsymbol{\theta}\) with \(\boldsymbol{x}\) held fixed.
@@ -699,45 +752,45 @@ Then the MLE of \(\boldsymbol{\theta}\) based on a RS \(\boldsymbol{X}\) is \(\b
 </p>
 </div>
 </div>
-<div id="outline-container-orgbaf97d0" class="outline-3">
-<h3 id="orgbaf97d0">MLE as a function of any sufficient statistic can be found</h3>
+<div id="outline-container-orgbba9f23" class="outline-3">
+<h3 id="orgbba9f23">MLE as a function of any sufficient statistic can be found</h3>
 </div>
-<div id="outline-container-org005ed0c" class="outline-3">
-<h3 id="org005ed0c">Invariance Property of MLE</h3>
-<div class="outline-text-3" id="text-org005ed0c">
+<div id="outline-container-org42fc6b8" class="outline-3">
+<h3 id="org42fc6b8">Invariance Property of MLE</h3>
+<div class="outline-text-3" id="text-org42fc6b8">
 <p>
 If \(\boldsymbol{\hat{\theta}}\) is MLE of \(\boldsymbol{\theta}\) then for any function \(\tau(.)\), MLE of \(\tau(\boldsymbol{\theta})\) is \(\tau(\boldsymbol{\hat{\theta}})\)
 </p>
 </div>
 </div>
-<div id="outline-container-org9d15ca0" class="outline-3">
-<h3 id="org9d15ca0">Unbiased Estimator</h3>
-<div class="outline-text-3" id="text-org9d15ca0">
+<div id="outline-container-org211cd06" class="outline-3">
+<h3 id="org211cd06">Unbiased Estimator</h3>
+<div class="outline-text-3" id="text-org211cd06">
 <p>
 \(T\) is said to be an unbiased estimator of \(\tau(\boldsymbol{\theta})\) if \(E_{\boldsymbol{\theta}}(T) = \tau(\boldsymbol{\theta})\) for all \(\boldsymbol{\theta}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgd27b4c1" class="outline-3">
-<h3 id="orgd27b4c1">Bias</h3>
-<div class="outline-text-3" id="text-orgd27b4c1">
+<div id="outline-container-orgf64ac85" class="outline-3">
+<h3 id="orgf64ac85">Bias</h3>
+<div class="outline-text-3" id="text-orgf64ac85">
 <p>
 Bias of statistic \(T\) as an estimator of \(\tau(\boldsymbol{\theta})\) is defined as
 \(B_T(\boldsymbol{\theta}) = E_{\boldsymbol{\theta}}(T) - \tau(\boldsymbol{\theta})\)
 </p>
 </div>
 </div>
-<div id="outline-container-org4a98326" class="outline-3">
-<h3 id="org4a98326">U-estimable function</h3>
-<div class="outline-text-3" id="text-org4a98326">
+<div id="outline-container-org576012e" class="outline-3">
+<h3 id="org576012e">U-estimable function</h3>
+<div class="outline-text-3" id="text-org576012e">
 <p>
 There exists a UE for the \(\tau(\boldsymbol{\theta})\)
 </p>
 </div>
 </div>
-<div id="outline-container-org27cd049" class="outline-3">
-<h3 id="org27cd049">Mean-Square Error (MSE)</h3>
-<div class="outline-text-3" id="text-org27cd049">
+<div id="outline-container-orgcdf52b9" class="outline-3">
+<h3 id="orgcdf52b9">Mean-Square Error (MSE)</h3>
+<div class="outline-text-3" id="text-orgcdf52b9">
 <p>
 Define MSE of statistic \(T\) as an estimator of \(\tau(\boldsymbol{\theta})\) as
 \(MSE_T(\boldsymbol{\theta}) = E[(T - \tau(\boldsymbol{\theta}))^2]\)
@@ -747,18 +800,18 @@ Define MSE of statistic \(T\) as an estimator of \(\tau(\boldsymbol{\theta})\) a
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd8993fc" class="outline-3">
-<h3 id="orgd8993fc">Uniform Minimum Variance Unbiased Estimator (UMVUE)</h3>
-<div class="outline-text-3" id="text-orgd8993fc">
+<div id="outline-container-orgf411d4f" class="outline-3">
+<h3 id="orgf411d4f">Uniform Minimum Variance Unbiased Estimator (UMVUE)</h3>
+<div class="outline-text-3" id="text-orgf411d4f">
 <p>
 Let \(\mathcal{C}\) be the set of all unbiased estimators of \(\tau(\boldsymbol{\theta})\) then \(T \in \mathcal{C}\) is called UMVUE
 if \(Var_{\boldsymbol{\theta}}(T) \le Var_{\boldsymbol{\theta}}(T^*) \quad \forall ~ \boldsymbol{\theta} \in \Theta\)
 </p>
 </div>
 </div>
-<div id="outline-container-orgf5bf24a" class="outline-3">
-<h3 id="orgf5bf24a">Theorem (UMVUE)</h3>
-<div class="outline-text-3" id="text-orgf5bf24a">
+<div id="outline-container-orgd57d510" class="outline-3">
+<h3 id="orgd57d510">Theorem (UMVUE)</h3>
+<div class="outline-text-3" id="text-orgd57d510">
 <p>
 Let \(X_1, \ldots X_n\) be RS with PDF/PMF \(f(., \boldsymbol{\theta})\). Let \(T\) be an estimator and
 let \(\mathcal{U}\) be set of estimators of zero then \(T\) is UMVUE if and only if
@@ -766,18 +819,18 @@ let \(\mathcal{U}\) be set of estimators of zero then \(T\) is UMVUE if and only
 </p>
 </div>
 </div>
-<div id="outline-container-orgedf547c" class="outline-3">
-<h3 id="orgedf547c">Uniqueness of UMVUE</h3>
-<div class="outline-text-3" id="text-orgedf547c">
+<div id="outline-container-org8d846c2" class="outline-3">
+<h3 id="org8d846c2">Uniqueness of UMVUE</h3>
+<div class="outline-text-3" id="text-org8d846c2">
 <p>
 If \(T\) is the UMVUE of \(\tau(\boldsymbol{\theta})\) then it is the unique UMVUE of \(\tau(\boldsymbol{\theta})\)
 with probability one
 </p>
 </div>
 </div>
-<div id="outline-container-org4294fa0" class="outline-3">
-<h3 id="org4294fa0">Rao-Blackwell Theorem</h3>
-<div class="outline-text-3" id="text-org4294fa0">
+<div id="outline-container-org35e4f57" class="outline-3">
+<h3 id="org35e4f57">Rao-Blackwell Theorem</h3>
+<div class="outline-text-3" id="text-org35e4f57">
 <p>
 Let \(T\) be an UE of \(\tau(\boldsymbol{\theta})\) and \(\boldsymbol{U}\) be a sufficient statistic for \(\boldsymbol{\theta}\) then
 </p>
@@ -787,9 +840,9 @@ Let \(T\) be an UE of \(\tau(\boldsymbol{\theta})\) and \(\boldsymbol{U}\) be a 
 </ol>
 </div>
 </div>
-<div id="outline-container-orgfc73d8f" class="outline-3">
-<h3 id="orgfc73d8f">Cramer-Rao Inequality</h3>
-<div class="outline-text-3" id="text-orgfc73d8f">
+<div id="outline-container-org8fb1a2f" class="outline-3">
+<h3 id="org8fb1a2f">Cramer-Rao Inequality</h3>
+<div class="outline-text-3" id="text-org8fb1a2f">
 <p>
 Let \(T\) be a UE of \(\tau(\boldsymbol{\theta})\) and \(\tau'(\boldsymbol{\theta})\) is finite for all \(\boldsymbol{\theta}\). Then
 \[ Var_{\boldsymbol{\theta}}(T) \ge \frac{(\tau'(\boldsymbol{\theta}))^2}{n\mathcal{I}_{X_1}(\boldsymbol{\theta})}\]
@@ -797,9 +850,9 @@ RHS is called Cramer-Rao Lower Bound (CRLB)
 </p>
 </div>
 </div>
-<div id="outline-container-org05e680b" class="outline-3">
-<h3 id="org05e680b">Lehmann-Scheffe Theorem - I</h3>
-<div class="outline-text-3" id="text-org05e680b">
+<div id="outline-container-org63a3260" class="outline-3">
+<h3 id="org63a3260">Lehmann-Scheffe Theorem - I</h3>
+<div class="outline-text-3" id="text-org63a3260">
 <p>
 Let \(T\) be a UE of \(\tau(\boldsymbol{\theta})\), \(\boldsymbol{U}\) be a complete sufficient statistic for \(\boldsymbol{\theta}\).
 Define \(g(\boldsymbol{u}) = \mathbb{E}\left[T | \boldsymbol{U} = \boldsymbol{u}\right]\). Then:
@@ -807,18 +860,18 @@ Define \(g(\boldsymbol{u}) = \mathbb{E}\left[T | \boldsymbol{U} = \boldsymbol{u}
 </p>
 </div>
 </div>
-<div id="outline-container-org04882f5" class="outline-3">
-<h3 id="org04882f5">Lehmann-Scheffe Theorem - II</h3>
-<div class="outline-text-3" id="text-org04882f5">
+<div id="outline-container-orge3d9063" class="outline-3">
+<h3 id="orge3d9063">Lehmann-Scheffe Theorem - II</h3>
+<div class="outline-text-3" id="text-orge3d9063">
 <p>
 Let \(T\) be a UE of \(\tau(\boldsymbol{\theta})\) and \(\boldsymbol{U}\) be a complete sufficient statistic for \(\boldsymbol{\theta}\).
 Then \(W = g(\boldsymbol{U})\) is the unique UMVUE of \(\tau(\boldsymbol{\theta})\)
 </p>
 </div>
 </div>
-<div id="outline-container-org0c0084d" class="outline-3">
-<h3 id="org0c0084d">Consistent Estimator</h3>
-<div class="outline-text-3" id="text-org0c0084d">
+<div id="outline-container-orgeb4d139" class="outline-3">
+<h3 id="orgeb4d139">Consistent Estimator</h3>
+<div class="outline-text-3" id="text-orgeb4d139">
 <p>
 Let \(T_n\) be an estimator based on a RS of size \(n\). Then
 \(T_n\) is said to be consistent estimator of \(\theta\) if the sequence
@@ -826,9 +879,9 @@ Let \(T_n\) be an estimator based on a RS of size \(n\). Then
 </p>
 </div>
 </div>
-<div id="outline-container-orgf207aae" class="outline-3">
-<h3 id="orgf207aae">Consistency of MLE</h3>
-<div class="outline-text-3" id="text-orgf207aae">
+<div id="outline-container-org266862a" class="outline-3">
+<h3 id="org266862a">Consistency of MLE</h3>
+<div class="outline-text-3" id="text-org266862a">
 <p>
 Let \(\theta \in \Theta \subset \mathbb{R}\) and let the following conditions hold
 </p>
@@ -842,22 +895,22 @@ Then MLE \(\widehat{\theta}_n(x)\) is a consistent estimator of \(\theta\)
 </p>
 </div>
 </div>
-<div id="outline-container-orge4e840e" class="outline-3">
-<h3 id="orge4e840e">Asymptotic Normality of MLE</h3>
-<div class="outline-text-3" id="text-orge4e840e">
+<div id="outline-container-orge3ad66b" class="outline-3">
+<h3 id="orge3ad66b">Asymptotic Normality of MLE</h3>
+<div class="outline-text-3" id="text-orge3ad66b">
 <p>
 Under the above conditions, \(\sqrt{n \mathcal{I}_{X_1}(\theta)}\left(\widehat{\theta}_n(X) - \theta\right) \rightarrow Z\) where \(Z \sim N(0, 1)\)
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org1ccc867" class="outline-2">
-<h2 id="org1ccc867">Chapter 3</h2>
-<div class="outline-text-2" id="text-org1ccc867">
+<div id="outline-container-org1d2530a" class="outline-2">
+<h2 id="org1d2530a">Chapter 3</h2>
+<div class="outline-text-2" id="text-org1d2530a">
 </div>
-<div id="outline-container-orgcf4a874" class="outline-3">
-<h3 id="orgcf4a874">Critical/Rejection Region</h3>
-<div class="outline-text-3" id="text-orgcf4a874">
+<div id="outline-container-org824e36a" class="outline-3">
+<h3 id="org824e36a">Critical/Rejection Region</h3>
+<div class="outline-text-3" id="text-org824e36a">
 <p>
 Region where we reject the null hypothesis \(H_0\)
 </p>
@@ -895,9 +948,9 @@ Region where we reject the null hypothesis \(H_0\)
 </table>
 </div>
 </div>
-<div id="outline-container-org326ac68" class="outline-3">
-<h3 id="org326ac68">Power function</h3>
-<div class="outline-text-3" id="text-org326ac68">
+<div id="outline-container-org06b7764" class="outline-3">
+<h3 id="org06b7764">Power function</h3>
+<div class="outline-text-3" id="text-org06b7764">
 <p>
 Probability of rejecting the null hypothesis \(H_0\) when
 \(\boldsymbol{\theta}\) is the true value of parameter
@@ -905,9 +958,9 @@ Probability of rejecting the null hypothesis \(H_0\) when
 </p>
 </div>
 </div>
-<div id="outline-container-orge3fbdeb" class="outline-3">
-<h3 id="orge3fbdeb">Size of test</h3>
-<div class="outline-text-3" id="text-orge3fbdeb">
+<div id="outline-container-org71ef6cc" class="outline-3">
+<h3 id="org71ef6cc">Size of test</h3>
+<div class="outline-text-3" id="text-org71ef6cc">
 <p>
 For test with \(H_0 : \boldsymbol{\theta} \in \Theta_0\) and \(H_1 : \boldsymbol{\theta} \in \Theta_1\) with
 power function \(\beta\), the size of test is \(\alpha\)
@@ -917,35 +970,35 @@ of type-I error
 </p>
 </div>
 </div>
-<div id="outline-container-org1032b06" class="outline-3">
-<h3 id="org1032b06">Level of test</h3>
-<div class="outline-text-3" id="text-org1032b06">
+<div id="outline-container-orgd57f054" class="outline-3">
+<h3 id="orgd57f054">Level of test</h3>
+<div class="outline-text-3" id="text-orgd57f054">
 <p>
 A test is level \(\alpha\) if \(\sup_{\boldsymbol{\theta} \in \Theta_0}\beta(\boldsymbol{\theta}) \le \alpha\)
 </p>
 </div>
 </div>
-<div id="outline-container-org7bcab01" class="outline-3">
-<h3 id="org7bcab01">Critical/Test function</h3>
-<div class="outline-text-3" id="text-org7bcab01">
+<div id="outline-container-org6da9062" class="outline-3">
+<h3 id="org6da9062">Critical/Test function</h3>
+<div class="outline-text-3" id="text-org6da9062">
 <p>
 A function \(\psi : \mathcal{X}^n \rightarrow [0, 1]\) is called critical func/test func
 if \(\psi(\boldsymbol{x})\) is the probability of rejecting \(H_0\) if \(\boldsymbol{X} = \boldsymbol{x}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orge89e412" class="outline-3">
-<h3 id="orge89e412">Power function</h3>
-<div class="outline-text-3" id="text-orge89e412">
+<div id="outline-container-org4c0b5e0" class="outline-3">
+<h3 id="org4c0b5e0">Power function</h3>
+<div class="outline-text-3" id="text-org4c0b5e0">
 <p>
 \[\beta(\boldsymbol{\theta}) = \mathbb{E}_{\boldsymbol{\theta}}\left[\psi(\boldsymbol{X})\right]\]
 Power function is the expectation of rejection given \(\boldsymbol{\theta}\)
 </p>
 </div>
 </div>
-<div id="outline-container-orge60d5f2" class="outline-3">
-<h3 id="orge60d5f2">Uniformly Most Powerful Test (UMP)</h3>
-<div class="outline-text-3" id="text-orge60d5f2">
+<div id="outline-container-orga6db149" class="outline-3">
+<h3 id="orga6db149">Uniformly Most Powerful Test (UMP)</h3>
+<div class="outline-text-3" id="text-orga6db149">
 <p>
 For a collection of tests \(\mathcal{C}_{\alpha}\) of level \(\alpha\). \(\beta \in \mathcal{C}_{\alpha}\) is the uniformly most
 powerful test at level \(\alpha\) if \(\beta(\boldsymbol{\theta}) \ge \beta^*(\boldsymbol{\theta})\) for all \(\boldsymbol{\theta} \in \Theta_1\) and \(\beta^*\) a
@@ -953,9 +1006,9 @@ power function of any test in \(\mathcal{C}_\alpha\).
 </p>
 </div>
 </div>
-<div id="outline-container-org90749e5" class="outline-3">
-<h3 id="org90749e5">Neyman-Pearson Lemma (simple null vs simple alternative)</h3>
-<div class="outline-text-3" id="text-org90749e5">
+<div id="outline-container-org485210c" class="outline-3">
+<h3 id="org485210c">Neyman-Pearson Lemma (simple null vs simple alternative)</h3>
+<div class="outline-text-3" id="text-org485210c">
 <p>
 Let \(H_0 : \boldsymbol{\theta} = \boldsymbol{\theta}_0\) and \(H_1 : \boldsymbol{\theta} = \boldsymbol{\theta}_1\). Then the MP level \(\alpha\) test is
 \[
@@ -967,9 +1020,18 @@ See notes for proof.
 </p>
 </div>
 </div>
-<div id="outline-container-orgb3b8927" class="outline-3">
-<h3 id="orgb3b8927">Monotone Likelihood Ratio (MLR) Property</h3>
-<div class="outline-text-3" id="text-orgb3b8927">
+<div id="outline-container-org14d5c9b" class="outline-3">
+<h3 id="org14d5c9b">Simple null vs two sided alternative</h3>
+<div class="outline-text-3" id="text-org14d5c9b">
+<p>
+Can be done via Neyman pearson lemma if result doesn't
+depend on \(\theta_1\).
+</p>
+</div>
+</div>
+<div id="outline-container-org34452a3" class="outline-3">
+<h3 id="org34452a3">Monotone Likelihood Ratio (MLR) Property</h3>
+<div class="outline-text-3" id="text-org34452a3">
 <p>
 A family of distributions \(\{f(., \theta): \theta \in \Theta\}\) has MLR property in
 real valued statistic \(T(\boldsymbol{X})\) if forall \(\theta < \theta^*\). \(\frac{L(\theta^*; \boldsymbol{x})}{L(\theta, \boldsymbol{x})}\) is a non-decreasing
@@ -977,9 +1039,9 @@ function of \(T(\boldsymbol{x})\).
 </p>
 </div>
 </div>
-<div id="outline-container-org973829d" class="outline-3">
-<h3 id="org973829d">One sided Null vs One sided alternative</h3>
-<div class="outline-text-3" id="text-org973829d">
+<div id="outline-container-org9d8ea27" class="outline-3">
+<h3 id="org9d8ea27">One sided Null vs One sided alternative</h3>
+<div class="outline-text-3" id="text-org9d8ea27">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -1033,11 +1095,269 @@ where \(\gamma\) and \(k\) are s.t. \(E_{\theta_0}(\psi(\boldsymbol{X})) = \alph
 </ul>
 </div>
 </div>
+
+<div id="outline-container-org3cc331e" class="outline-3">
+<h3 id="org3cc331e">Likelihood Ratio Tests</h3>
+<div class="outline-text-3" id="text-org3cc331e">
+<p>
+Let \(\Lambda(\boldsymbol{x}) = \frac{\sup_{\boldsymbol{\theta}\in\Theta_0}L(\boldsymbol{\theta},\boldsymbol{x})}{\sup_{\boldsymbol{\theta}\in\Theta_0\cup\Theta_1} L(\boldsymbol{\theta},\boldsymbol{x})\)
+and define test function \[\psi(x) = \begin{cases} 1 & \Lambda(\boldsymbol{x}) < k \\
+   \gamma & \Lambda(\boldsymbol{x}) = k \\
+   0 & \Lambda(\boldsymbol{x}) > k\end{cases}\]
+such that \(\sup_{\boldsymbol{\theta} \in \Theta_0} E_{\boldsymbol{\theta}}(\psi(\boldsymbol{X})) = \alpha\)
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org1c48da2" class="outline-2">
+<h2 id="org1c48da2">Chapter 4</h2>
+<div class="outline-text-2" id="text-org1c48da2">
+</div>
+<div id="outline-container-orgf22ace8" class="outline-3">
+<h3 id="orgf22ace8">Interval Estimator</h3>
+<div class="outline-text-3" id="text-orgf22ace8">
+<p>
+An interval estimate of parameter \(\theta\) is any pair of functions of R.S. only
+s.t. \(L(\boldsymbol{x}) \le U(\boldsymbol{x})\). Written as \([L(\boldsymbol{X}), U(\boldsymbol{X})]\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org548a616" class="outline-3">
+<h3 id="org548a616">Coverage Probability</h3>
+<div class="outline-text-3" id="text-org548a616">
+<p>
+Coverage probability associated with an interval estimator \([L(\boldsymbol{X}), U(\boldsymbol{X})]\) is
+\(P_{\theta}\left\{L(\boldsymbol{X}) \le \theta \le U(\boldsymbol{X})\right\}\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1473f08" class="outline-3">
+<h3 id="org1473f08">Confidence Coefficient</h3>
+<div class="outline-text-3" id="text-org1473f08">
+<p>
+The confidence coefficient of an interval is defined by
+\(\inf_{\theta \in \Theta}P_{\theta}\left\{L(\boldsymbol{X}) \le \theta \le U(\boldsymbol{X})\right\}\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9f4b5df" class="outline-3">
+<h3 id="org9f4b5df">Confidence Interval</h3>
+<div class="outline-text-3" id="text-org9f4b5df">
+<p>
+An interval estimator \([L(\boldsymbol{X}), U(\boldsymbol{X})]\) is said to be of level \(1-\alpha\) if
+\(P_\theta \left\{[L(\boldsymbol{X}) \le \theta \le  U(\boldsymbol{X})]\right\} \ge 1 - \alpha\) for all \(\theta \in \Theta\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3ac4046" class="outline-3">
+<h3 id="org3ac4046">Pivot</h3>
+<div class="outline-text-3" id="text-org3ac4046">
+<p>
+A R.V. is called a pivot if its distribution doesn't involve
+any unknown parameters
+</p>
+
+<p>
+If \(T(\boldsymbol{X}, \theta)\) is a pivot then C.I. can be obtained from \(P_{\theta}(a \le T(\boldsymbol{X}, \theta) \le b) \ge 1-\alpha\)
+if \(T\) is monotone then the we get an interval.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc506a1" class="outline-3">
+<h3 id="orgfc506a1">Large Sample Size</h3>
+<div class="outline-text-3" id="text-orgfc506a1">
+<p>
+If sample size is large then we can use CLT i.e. \(\frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0, 1)\).
+</p>
+</div>
+<div id="outline-container-org1461da0" class="outline-4">
+<h4 id="org1461da0">MLE</h4>
+<div class="outline-text-4" id="text-org1461da0">
+<p>
+Let \(\widehat{\theta}\) be MLE with variance \(b(\widehat{\theta})\) then \(\frac{\widehat{\theta}-\theta}{b(\widehat{\theta})/\sqrt{n}}\)
+tends to \(\mathcal{N}(0,1)\) in distribution
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgee7b115" class="outline-2">
+<h2 id="orgee7b115">Chapter 5</h2>
+<div class="outline-text-2" id="text-orgee7b115">
+<p>
+\(y\) is target, response, dependent variables and \(x\) is
+predictors, regressor, independent variable.
+</p>
+
+<p>
+\(y = \beta_0 + \beta_1 x + \epsilon\)
+</p>
+
+<p>
+We make the following assumptions:
+</p>
+<ul class="org-ul">
+<li>The regressor is controlled (not a RV) and measured with negligible error</li>
+<li>Random errors have mean 0 and variance \(\sigma^2\)</li>
+<li>Errors are uncorrelated</li>
+</ul>
+</div>
+
+<div id="outline-container-org0a6a420" class="outline-4">
+<h4 id="org0a6a420">Least square estimation:</h4>
+<div class="outline-text-4" id="text-org0a6a420">
+<p>
+\(\widehat{\beta}_1 = \frac{S_{xy}}{S_{xx}}\) and \(\widehat{\beta}_0 = \overline{y} - \widehat{\beta}_1\overline{x}\) where
+\(S_{xy} = \sum (x_i - \overline{x})(y_i - \overline{y}) = \sum (x_i - \overline{x})y_i = \sum x_iy_i - n\overline{x}\overline{y}\) and
+\(S_{xx} = \sum (x_i -\overline{x})^2 = \sum x_i^2 - \frac{1}{n}(\sum x_i)^2\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3f4a304" class="outline-4">
+<h4 id="org3f4a304">Properties of Least Square Estimates</h4>
+<div class="outline-text-4" id="text-org3f4a304">
+<ul class="org-ul">
+<li>\(\widehat{\beta}_0\) and \(\widehat{\beta}_1\) are linear combinations of \(y_i\)</li>
+<li>\(\widehat{\beta}_0\) and \(\widehat{\beta}_1\) are UE of \(\beta_0\) and \(\beta_1\)</li>
+<li>\(Var(\widehat{\beta}_0) = \sigma^2 \left( \frac{1}{n} + \frac{\overline{x}^2}{S_{xx}} \right)\) and \(Var(\widehat{\beta}_1) = \frac{\sigma^2}{S_{xx}}\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge305d08" class="outline-4">
+<h4 id="orge305d08">Linear Estimator</h4>
+<div class="outline-text-4" id="text-orge305d08">
+<p>
+\(\widehat{\theta}\) is a linear estimator of \(\theta\) if it is a linear combination
+of observed data.
+</p>
+</div>
+</div>
+<div id="outline-container-org3092fb6" class="outline-4">
+<h4 id="org3092fb6">Best Linear Unbiased estimator (BLUE)</h4>
+<div class="outline-text-4" id="text-org3092fb6">
+<p>
+If the Linear estimator is UE of \(\theta\) and has minimum variance
+among all linear UE of \(\theta\)
+</p>
+</div>
+</div>
+<div id="outline-container-orgb6990e1" class="outline-4">
+<h4 id="orgb6990e1">Gauss-Markov Theorem</h4>
+<div class="outline-text-4" id="text-orgb6990e1">
+<p>
+Least square estimators are BLUE of \(\beta_0\) and \(\beta_1\)
+</p>
+
+<p>
+Some Results:
+</p>
+<ul class="org-ul">
+<li>\(\sum (y_i - \widehat{y}_i) = \sum e_i = 0\) or \(\sum y_i = \sum \widehat{y}_i\)</li>
+<li>\(\sum x_i e_i = 0\)</li>
+<li>\(\sum \widehat{y}_i e_i = 0\)</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc36ce1a" class="outline-3">
+<h3 id="orgc36ce1a">Estimation of Error Variance</h3>
+<div class="outline-text-3" id="text-orgc36ce1a">
+<p>
+Define \(SS_{Res} = \sum e_i^2 = \sum (y_i - \widehat{y})^2\) then \(E(SS_{Res}) = (n-2)\sigma^2\)
+</p>
+
+<p>
+UE of \(\sigma^2\) is \(MS_{Res} = \widehat{\sigma}^2 = \frac{SS_{Res}}{n-2}\)
+</p>
+
+<p>
+\(SS_{Res} = SS_T - \widehat{\beta}_1 S_{xy}\) where \(SS_T = \sum (y_i - \overline{y})^2\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6fdcfa0" class="outline-3">
+<h3 id="org6fdcfa0">Hypothesis testing on Slope and Intercept</h3>
+<div class="outline-text-3" id="text-org6fdcfa0">
+<p>
+\(Z = \frac{\widehat{\beta}_1 - \beta_{10}}{\sqrt{\frac{\sigma^2}{S_{xx}}}}\) has \(\mathcal{N}(0,1)\) distribution when \(\beta_1 = \beta_{10}\). It can
+be shown \(\frac{(n-2)MS_{Res}}{\sigma^2} \sim \chi^2_{n-2}\) and that \(MS_{Res}\) and \(\widehat{\beta}_1\) are independent RV.
+</p>
+
+<p>
+\(\frac{\widehat{\beta}_1 - \beta_{10}}{\sqrt{\frac{MS_{Res}}{S_{xx}}}} \sim t_{n-2}\)
+</p>
+
+<p>
+\(\frac{\widehat{\beta}_0 - \beta_{00}}{\sqrt{MS_{Res}\left( \frac{1}{n} + \frac{\overline{x}^2}{S_{xx}} \right)}} \sim t_{n-2}\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc158875" class="outline-3">
+<h3 id="orgc158875">Interval Estimation</h3>
+<div class="outline-text-3" id="text-orgc158875">
+<p>
+The distributions in previous sections can be used as pivot
+to construct CIs.
+</p>
+
+<p>
+Notation : \(\frac{\widehat{\beta}_1 - \beta_{10}}{se(\widehat{\beta}_1)} = \frac{\widehat{\beta}_1 - \beta_{10}}{\sqrt{\frac{MS_{Res}}{S_{xx}}}} \sim t_{n-2}\)
+</p>
+
+<p>
+To construct CI for \(y\) given \(x_0\),
+\(Var(\mu_{y|x_0}) = Var(\widehat{\beta}_0 + \widehat{\beta}_1x_0) = \sigma^2 \left( \frac{1}{n} + \frac{(x_0 - \overline{x})^2}{S_{xx}} \right)\)
+</p>
+
+<p>
+So, \(\frac{\mu_{y|x_0} - E(y|x_0)}{\sqrt{MS_{Res} \left( \frac{1}{n} + \frac{(x_0 - \overline{x})^2}{S_{xx}} \right)}} \sim t_{n-2}\) can be used as pivot
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgef9b59c" class="outline-3">
+<h3 id="orgef9b59c"><span class="todo TODO">TODO</span> Prediction of new observation</h3>
+</div>
+
+<div id="outline-container-org4b9f81d" class="outline-3">
+<h3 id="org4b9f81d">Coefficient of determination</h3>
+<div class="outline-text-3" id="text-org4b9f81d">
+<p>
+\[R^2 = \frac{SS_R}{SS_T} = 1 - \frac{SS_{Res}}{SS_T}\]
+where
+\[\begin{align*}
+   SS_R &= \sum (\widehat{y}_i - \overline{y})^2 \\
+   SS_T &= \sum (y_i - \overline{y})^2 \\
+   SS_{Res} &= \sum(y_i - \widehat{y_i})^2 = \sum e_i^2 \\
+   SS_T &= SS_R + SS_{Res}
+   \end{align*}\]
+</p>
+
+<p>
+Value of \(R^2\) close to 1 means most of variablility is explained by
+regression model
+</p>
+
+<p>
+Also \(\sum (y_i - \widehat{y}_i) (\widehat{y}_i - \overline{y}) = 0\)
+</p>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Ashish</p>
-<p class="date">Created: 2021-03-26 Fri 09:07</p>
+<p class="author">Author: Ashish Kumar Barnawal</p>
+<p class="date">Created: 2021-04-21 Wed 06:02</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
